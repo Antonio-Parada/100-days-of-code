@@ -336,8 +336,8 @@ Notes: Implemented a basic command-line RDBMS with functionalities for creating 
 Description: Build a piece of software that will analyse pictures (or better, live cam feed) and tag faces in the images as face or with a box.
 Suggested Language: Python (or any other language you want to learn)
 Suggested Frameworks/Tools: OpenCV
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a basic Python script for real-time face detection using OpenCV's Haar Cascade classifier on a webcam feed.
 
 #### Spam Classifier
 Description: Build a spam classifier that filters ads and other unrequired emails from people that you don't really want to look at.
