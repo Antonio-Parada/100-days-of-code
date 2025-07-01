@@ -399,8 +399,8 @@ Notes: Implemented a basic rule-based Python script for movie recommendations ba
 Description: Similar to the video translator, but now you need to translate an audio to sign language. The sign language part can be in the form of a series of images or a video.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a basic Python script simulating speech recognition and conceptual sign language mapping for words.
 
 ### Theoretical Computer Science
 
