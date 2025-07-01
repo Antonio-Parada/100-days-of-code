@@ -19,4 +19,3 @@ This project involves building an AI to suggest music based on a user's taste. I
 *   [ ] (Bonus) User feedback mechanism to refine recommendations.
 
 ## Notes
-

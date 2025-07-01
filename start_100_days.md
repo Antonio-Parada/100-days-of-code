@@ -371,8 +371,8 @@ Notes: Implemented a basic rule-based Python script for word-by-word translation
 Description: Build a piece of software that can recognise gestures from a camera video and then carry out certain tasks based on the gesture.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a basic Python script for webcam video capture and display using OpenCV, serving as a foundation for hand gesture recognition.
 
 #### Video Subtitle Generator
 Description: Input a video and get a subtitle! Build a software that automatically creates subtitles from a provided video. It may seem difficult in the beginning, but look up Natural Language Processing to see how far machines already are with regard to understanding human language.

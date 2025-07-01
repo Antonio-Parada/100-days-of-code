@@ -45,7 +45,9 @@
 - Started Spam Classifier project: Implemented a basic rule-based Python script for spam classification.
 - Started Spoiler Blocker project: Implemented a basic browser extension with keyword-based spoiler blurring.
 - Started Music Suggestor project: Implemented a basic rule-based Python script for music recommendations based on genre.
+- Started Music Suggestor project: Implemented a basic rule-based Python script for music recommendations based on genre.
 - Started Machine Translator project: Implemented a basic rule-based Python script for word-by-word translation.
+- Started Hand Gesture Recognition project: Implemented a basic Python script for webcam video capture as a foundation for gesture recognition.
 - Started Spam Classifier project: Implemented a basic rule-based Python script for spam classification.
 - Started Face Tracker project: Implemented a basic Python script for real-time face detection using OpenCV.
 - Started Deal Finder project: Implemented a basic Python script simulating price tracking and deal alerts using BeautifulSoup.
