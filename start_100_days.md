@@ -357,8 +357,8 @@ Notes: Implemented a basic browser extension with a content script to blur prede
 Description: Bored of the same songs but don't know what to try next? Build an AI to suggest you music based on your taste that you are more likely to like.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a basic rule-based Python script for music recommendations based on predefined genres and artists.
 
 #### Machine Translator
 Description: Build an app to translate text from one language to another. For bonus points include an image translator that can get text from image and translate it.
