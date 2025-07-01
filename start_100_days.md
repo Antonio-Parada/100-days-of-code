@@ -306,8 +306,8 @@ Notes: Implemented a basic command-line virtual assistant with functionalities f
 Description: Build an antivirus software that will protect you from viruses and other computer worms and stuff. Make sure you update it frequently to deal with the newer viruses.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a basic Python script for signature-based file scanning using MD5 hashes against a predefined malware database.
 
 #### Video Call Application
 Description: Build an app that can let you video call anyone anywhere over the internet.
