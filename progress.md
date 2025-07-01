@@ -10,4 +10,5 @@
 - Started Bandwidth Monitor project: Implemented basic network usage tracking using psutil.
 - Started Product Landing Page project: Created basic HTML structure, CSS styling, and a simple JavaScript interaction.
 - Started Blog project: Implemented a basic Flask blog with static posts and routing.
-- Started Portfolio Website project: Created basic HTML structure, CSS styling, and a simple JavaScript for navigation.
+- Started Portfolio Website project: Created basic HTML sections, CSS styling, and smooth scrolling JavaScript.
+- Started Animated Navigation Toggle project: Implemented a responsive hamburger menu with CSS transitions and JavaScript toggling.

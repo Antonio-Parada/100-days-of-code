@@ -96,8 +96,8 @@ Notes: Created a basic portfolio website with HTML sections, CSS styling, and sm
 Description: Although it may seem like a small task, building an animated navigation toggle will teach you a lot about web development. Explore all the ideas that you can play with and see if you can build something truly fascinating!
 Suggested Language: JavaScript, CSS
 Suggested Frameworks/Tools: -
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a responsive hamburger menu with CSS transitions for smooth open/close animations and JavaScript for toggling classes.
 
 #### Country Lookup using IP address
 Description: Can you find the country from a provided IP address? Write a script that can help you with this. For bonus points, try to figure out a more local location from the IP address.
