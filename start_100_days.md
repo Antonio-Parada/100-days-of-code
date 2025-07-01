@@ -285,8 +285,8 @@ Notes: Implemented a basic Python script to fetch and display news headlines fro
 Description: Build an app that will track the amount of calories that you eat everyday. Try to also incorporate information about other macro and micro nutrients to provide a more complete picture.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a basic command-line calorie counter with food logging and daily summary including macronutrients.
 
 #### Traffic Notifier
 Description: Build an app (phone app will be better) that finds how congested one route is and then suggests you a better route to take to your destination.
