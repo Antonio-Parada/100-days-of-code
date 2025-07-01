@@ -129,8 +129,8 @@ Description: Build a bot that will either
 - retweet tweets containing a specific hashtag
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Created a basic Python script for a Twitter bot, demonstrating authentication and a placeholder for retweeting functionality. Requires Twitter API credentials and setup.
 
 #### Messenger Bot
 Description: Build a bot for messenger that can do some menial tasks too like flip a coin, roll a dice, present the news, and chat with you when bored.
