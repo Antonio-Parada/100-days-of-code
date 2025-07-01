@@ -103,8 +103,8 @@ Notes: Implemented a responsive hamburger menu with CSS transitions for smooth o
 Description: Can you find the country from a provided IP address? Write a script that can help you with this. For bonus points, try to figure out a more local location from the IP address.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a Python script to retrieve country and location details from an IP address using ip-api.com.
 
 ### Bots
 

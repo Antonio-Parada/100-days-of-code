@@ -12,3 +12,4 @@
 - Started Blog project: Implemented a basic Flask blog with static posts and routing.
 - Started Portfolio Website project: Created basic HTML sections, CSS styling, and smooth scrolling JavaScript.
 - Started Animated Navigation Toggle project: Implemented a responsive hamburger menu with CSS transitions and JavaScript toggling.
+- Started Country Lookup using IP address project: Implemented a Python script to retrieve country and location details from an IP address using a public API.
