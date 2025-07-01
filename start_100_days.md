@@ -457,8 +457,8 @@ Notes: Implemented a web-based visualization of Breadth-First Search (BFS) on a 
 Description: Make a proper version control system like git that can keep track of any changes that you make to your project.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a basic command-line version control system with functionalities for initializing repositories, adding files, committing changes, and viewing commit history.
 
 #### Programming Language
 Description: Code a programming language from scratch. This project will give you great insights into why languages are structured the way they are and which languages suit which tasks better. There are quite a few programming languages, thus, incorporate some really weird (or helpful) features to make your language stand out (e.g. check out [brainfuck](https://en.wikipedia.org/wiki/Brainfuck)).
