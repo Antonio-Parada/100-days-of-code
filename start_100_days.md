@@ -194,8 +194,8 @@ Notes: Implemented a web-based drawing application using HTML Canvas with basic 
 Description: Build an app/web app that will let anyone create survey questions and circulate it via email to record responses and then analyze the data collected.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a basic command-line survey application with survey creation, taking, and response viewing functionalities.
 
 #### Web Browser
 Description: Build a piece of software that will help you browse any HTML page. For bonus points, add additional features like those in Chrome and Firefox.
