@@ -61,8 +61,8 @@ Notes: Implemented basic socket communication for client and server, serving as 
 Description: Build a Web Search Engine like Google or Bing. Don't copy from them though 😉
 Suggested Language: web languages. The real work will happen on the backend side with languages like Python, PHP, SQL, Node... Use anything you want for the frontend : HTML, CSS, Javascript...
 Suggested Frameworks/Tools: Django if you use Python, MySQL for the databases if you need one
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a basic in-memory search engine with document indexing and keyword search.
 
 #### Bandwidth Monitor
 Description: Build a tool to track how much data you have downloaded or uploaded to the internet. Have it email you weekly reports of your usage (or notify you when you get above a specified usage limit). As a bonus challenge, predict peak usage times.

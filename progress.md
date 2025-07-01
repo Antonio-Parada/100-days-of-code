@@ -6,3 +6,4 @@
 - Started Port Scanner project: Implemented basic TCP port scanning functionality.
 - Started Packet Sniffer project: Implemented basic packet capturing and parsing of Ethernet, IP, TCP, UDP, and ICMP headers.
 - Started P2P File Sharing project: Implemented basic socket communication for client and server.
+- Started Search Engine project: Implemented a basic in-memory search engine with document indexing and keyword search.
