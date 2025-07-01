@@ -385,8 +385,8 @@ Notes: Implemented a basic Python script simulating subtitle generation from aud
 Description: Build a software that takes in a company name and some related keywords to generate a brand new logo for the user. Make the logo editable so the user can make any changes if they don't like the generated output.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a basic Python script using Pillow to generate logos with company name and slogan, allowing for background and text color customization.
 
 #### Movie Recommendation System
 Description: Build a recommendation system that lets you or any users choose the next movie that you want to watch. Instead of copying an existing movie recommender with a well studied algorithm, try to come up with your own algorithm and test it out.
