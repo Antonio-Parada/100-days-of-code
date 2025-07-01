@@ -243,8 +243,8 @@ Notes: Implemented a basic command-line URL shortener using MD5 hashing and base
 Description: Build a payment interface that can deal with fake cash (better if you can deal with real currency, although I don't know if you have to take extra steps for that). Users should be able to receive and send money, and also check their current balance.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a basic command-line payment system with account creation, balance checking, and money transfer functionalities.
 
 #### MEME Generator
 Description: Build an app/web app that will overlay text over an image, so that users can build memes.
