@@ -208,8 +208,8 @@ Notes: Implemented a basic Python script that opens a given URL in the default s
 Description: Build an app that gets the weather at your location in the current time. You can either use a web scraper in the background to collect the data or use a weather API.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a Python script to fetch and display weather information for a given city using the OpenWeatherMap API.
 
 #### Math Editor
 Description: Build an app that will properly format equations that a user inputs. I personally find it really inconvenient to work with a special software to just write and display equations properly like Latex, thus, if you build something that can convert plain English text to properly formatted equations, ping me!
