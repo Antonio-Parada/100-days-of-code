@@ -278,8 +278,8 @@ Notes: Implemented a basic Python script using TextBlob for spell checking and s
 Description: Build an app that will present you daily news from credible sources. Make sure you pool unique information about a given news headline from different sites to remove any bias that may be present in a given source.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a basic Python script to fetch and display news headlines from NewsAPI.org.
 
 #### Calorie Counter
 Description: Build an app that will track the amount of calories that you eat everyday. Try to also incorporate information about other macro and micro nutrients to provide a more complete picture.
