@@ -136,8 +136,8 @@ Notes: Created a basic Python script for a Twitter bot, demonstrating authentica
 Description: Build a bot for messenger that can do some menial tasks too like flip a coin, roll a dice, present the news, and chat with you when bored.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a basic CLI-simulated messenger bot with command processing for coin flips, dice rolls, and jokes.
 
 #### WhatsApp Butler
 Description: Build a bot for WhatsApp that can scrape information from the internet like news, wikipedia entries, and other things. Make it able to keep track of some events like your/someone else's birthday and send an automatic message wishing you/the other person.
