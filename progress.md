@@ -1,9 +1,5 @@
-# 100 Days of Code - Progress Log
-
-This document tracks the progress of projects undertaken as part of the 100 Days of Code initiative.
-
-## Projects Completed:
-
-| Day | Project Name | Category | Date Completed | Key Learnings |
-|-----|--------------|----------|----------------|---------------|
-|     |              |          |                |               |
+- Added support for dynamic content scraping using Selenium (requires `selenium` and webdriver).
+- Implemented proxy support for requests.
+- Added user-agent rotation to mimic different browsers.
+- Included rate limiting/delays between requests for politeness.
+- Completed Web Scraper project with user-agent rotation, proxy support, rate limiting, and Selenium integration.

@@ -19,22 +19,22 @@ This document outlines all the projects from the `100PROJECTSOFCODE` repository,
 Description: A simple File Transfer client that uses the FTP (File Transfer Protocol). As a bonus challenge, add support for secure file transfer. It can be a web, desktop, or CLI app. You can try to first implement TFTP (Trivial File Transfer Protocol) as it's easier.
 Suggested Language: C/C++
 Suggested Frameworks/Tools: Use [Wireshark](https://github.com/wireshark/wireshark) to observe packets and debug them
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented FTP client with connect, login, list, retr, and stor commands.
 
 #### HTTP Server
 Description: To understand HTTP better, you need to build an HTTP server. It's not much difficult now a days (with the wealth of information around us).
 Suggested Language: Python (or any other language you want to master)
 Suggested Frameworks/Tools: socket (Python Library)
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented HTTP server with HTTPS, request body parsing, middleware, templating, session management, SQLite integration, regex routing, and file uploads.
 
 #### Web Scraper
 Description: Build a web scraper that takes in a URL/Keyword as input and returns matching results from the web related to the input. You can also build a product searcher or something like that.
 Suggested Language: Python (or any other language you want to master)
 Suggested Frameworks/Tools: Beautifulsoup (Python Library)
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented dynamic content scraping with Selenium, proxy support, user-agent rotation, and rate limiting.
 
 #### Port Scanner
 Description: Build a port scanner application that can probe a server or host for open ports. You will need some technical knowledge regarding how networks work and how you can scan for ports or classify them.
