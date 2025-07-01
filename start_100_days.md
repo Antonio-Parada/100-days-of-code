@@ -494,8 +494,8 @@ Notes:
 Description: Build a website/app that will check how strong a given password is. To make it more fancy, incorporate a good metric of how strong a password is (check out the example).
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a basic command-line password strength checker in Python, assessing strength based on length, character types, and providing suggestions.
 
 ### Simulations, Games and Game AI
 
