@@ -54,8 +54,8 @@ Notes: Implemented basic packet capturing and parsing of Ethernet, IP, TCP, UDP,
 Description: Build an app that will allow for peer-to-peer file sharing securely over the internet. This will help you transfer files securely from one location to another or send something to your friend.
 Suggested Language: Java, C++
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented basic socket communication for client and server, serving as a foundation for secure file transfer.
 
 #### Search Engine
 Description: Build a Web Search Engine like Google or Bing. Don't copy from them though 😉
