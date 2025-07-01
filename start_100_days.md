@@ -68,8 +68,8 @@ Notes: Implemented a basic in-memory search engine with document indexing and ke
 Description: Build a tool to track how much data you have downloaded or uploaded to the internet. Have it email you weekly reports of your usage (or notify you when you get above a specified usage limit). As a bonus challenge, predict peak usage times.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented basic network usage tracking using psutil, displaying total sent/received and current rates.
 
 #### Product Landing Page
 Description: Build the ideal product landing page according to you. Choose a product, build a page and showcase that on your portfolio.
