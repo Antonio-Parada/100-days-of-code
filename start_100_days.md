@@ -229,8 +229,8 @@ Notes: Implemented a basic command-line music player using pygame.mixer with pla
 Description: Build a stopwatch app/web app. It should also be able to lap time.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a basic command-line stopwatch with start, stop, reset, and lap functionalities.
 
 #### URL Shortener
 Description: Build a web app that can shorten any URL that the user provides. You can either code an algorithm that shortens and stores the user provide URL or use an API.

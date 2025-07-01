@@ -26,6 +26,7 @@
 - Started Weather App project: Implemented a Python script to fetch and display weather information using OpenWeatherMap API.
 - Started Math Editor project: Implemented a basic Python script to convert simple English-like mathematical expressions into LaTeX format.
 - Started Music Player project: Implemented a basic command-line music player using pygame.mixer with play, pause, unpause, and stop functionalities.
+- Started Stopwatch App project: Implemented a basic command-line stopwatch with start, stop, reset, and lap functionalities.
 - Started ToDo List project: Implemented a basic command-line ToDo list application with task management and status updates.
 - Started Firewall project: Implemented a conceptual Python script demonstrating packet inspection logic for blocking rules.
 - Started Slack Bot project: Created a basic Python script with placeholder for Slack API interaction.
