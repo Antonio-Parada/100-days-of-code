@@ -215,8 +215,8 @@ Notes: Implemented a Python script to fetch and display weather information for 
 Description: Build an app that will properly format equations that a user inputs. I personally find it really inconvenient to work with a special software to just write and display equations properly like Latex, thus, if you build something that can convert plain English text to properly formatted equations, ping me!
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a basic Python script to convert simple English-like mathematical expressions into LaTeX format.
 
 #### Music Player
 Description: Build a music player app that can play music from mp3 files and also have functionality for forward, rewind, pause, and play.
