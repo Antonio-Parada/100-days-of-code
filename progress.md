@@ -9,3 +9,4 @@
 - Started Search Engine project: Implemented a basic in-memory search engine with document indexing and keyword search.
 - Started Bandwidth Monitor project: Implemented basic network usage tracking using psutil.
 - Started Product Landing Page project: Created basic HTML structure, CSS styling, and a simple JavaScript interaction.
+- Started Blog project: Implemented a basic Flask blog with static posts and routing.

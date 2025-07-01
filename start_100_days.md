@@ -82,8 +82,8 @@ Notes: Created a basic product landing page with HTML structure, CSS styling, an
 Description: A blog is a must have for everyone (according to me). Combine that fact with the fact that you learn a lot of things while building your own blog from scratch, and voila!
 Suggested Language: JavaScript, Python, Ruby
 Suggested Frameworks/Tools: Jekyll (for Ruby), Django/Flask (Python)
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a basic Flask blog with static posts and routing.
 
 #### Portfolio Website
 Description: If you are ever interested in showcasing the things you have built, build a portfolio website! Building a website to display all the stuff will teach you a lot about website design in general (if you've never built a website before).
