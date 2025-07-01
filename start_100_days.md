@@ -152,8 +152,8 @@ Notes: Implemented a Python script simulating Wikipedia scraping and reminder ma
 Description: The user chooses a category and gets a random set of questions from the given category. Implement a Multiple choice Quiz app to prevent more complications.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a basic command-line quiz application with multiple-choice questions, category selection, and scoring.
 
 #### Firewall
 Description: Build a firewall software that can regulate the network connections for the user and also block/notify of any suspicious action from any website/internal software/external agent.
