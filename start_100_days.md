@@ -645,8 +645,8 @@ Notes:
 Description: Build a simple web app to notify you when an item you covet goes on sale for a good price. You can use a web scraper to pull the item's product page and notify you of any price changes.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a basic Python script simulating price tracking and deal alerts using BeautifulSoup for parsing dummy HTML content.
 
 #### Expense Tracker
 Description: Create a simple interface (web app/phone app) you can use to add and categorize your expense. Generate monthly reports based on the inputs and write custom alerts for things like, "spending too much on coffee... as always".

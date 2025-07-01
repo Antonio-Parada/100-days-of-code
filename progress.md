@@ -40,6 +40,7 @@
 - Started Antivirus Software project: Implemented a basic Python script for signature-based file scanning.
 - Started Video Call Application project: Implemented a basic Python script for webcam video capture and display.
 - Started Library Management System project: Implemented a basic command-line library management system with book and member management.
+- Started Deal Finder project: Implemented a basic Python script simulating price tracking and deal alerts using BeautifulSoup.
 - Started ToDo List project: Implemented a basic command-line ToDo list application with task management and status updates.
 - Started Firewall project: Implemented a conceptual Python script demonstrating packet inspection logic for blocking rules.
 - Started Slack Bot project: Created a basic Python script with placeholder for Slack API interaction.
