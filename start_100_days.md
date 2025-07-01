@@ -173,8 +173,8 @@ Notes: Implemented a basic command-line ToDo list application with task adding, 
 Description: Build a simple text editor that can help you open, read from and write to text files. For bonus points incorporate features like the find tool and regex search and replace.
 Suggested Language: JavaScript, Java
 Suggested Frameworks/Tools: Electron (JavaScript framework)
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a basic command-line text editor with file open/save, display, insert, delete, and replace line functionalities.
 
 #### Application Builder
 Description: This is probably the hardest one on the list and the most vague one too. Design a system that takes in text input and generates applications (or at least application interfaces) based on the text description. You can also use a drag-and-drop like feature to let users build the app.
