@@ -415,8 +415,8 @@ Notes: Created conceptual C kernel and Assembly bootloader files, demonstrating 
 Description: Build a web app to visualize the different shuffling algorithms that can be used to shuffle a standard deck of cards.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a web-based visualization of card shuffling using the Fisher-Yates algorithm with HTML, CSS, and JavaScript.
 
 #### Sorting Visualizer
 Description: Build a webpage/video that will visualize the different sorting algorithms. You can use different kinds of visualizations: dots, bars, colour bars, circularly scattered points, and so on.
