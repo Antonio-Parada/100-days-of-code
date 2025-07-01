@@ -480,8 +480,8 @@ Notes: Implemented a basic command-line Caesar cipher for text encryption and de
 Description: Build a software that can manage the different passwords that you use on different websites. For bonus points incorporate a random password generator.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a basic command-line password manager with functionalities to add, retrieve, and generate random passwords.
 
 #### Folder Encrypter
 Description: Build a piece of software that can encrypt and lock a selected folder. The contents of the folder should not be accessible/copied/moved without the correct password.
