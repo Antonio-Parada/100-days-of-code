@@ -250,8 +250,8 @@ Notes: Implemented a basic command-line payment system with account creation, ba
 Description: Build an app/web app that will overlay text over an image, so that users can build memes.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a basic Python script using Pillow to overlay text on images and save them as memes.
 
 #### Pomodoro Clock
 Description: Build a Pomodoro timer that will help you take breaks at proper times while doing a task. For bonus points include different Pomodoro timer formats.
