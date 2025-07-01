@@ -313,8 +313,8 @@ Notes: Implemented a basic Python script for signature-based file scanning using
 Description: Build an app that can let you video call anyone anywhere over the internet.
 Suggested Language: Python, Java, C++ for a desktop app
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a basic Python script for webcam video capture and display using OpenCV, as a foundational step for a video call application.
 
 #### Library Management System
 Description: Build an app for a hypothetical (or better, a real one near you) library that will help in management. You need to keep track of books you have, books to order, people with access to the library, books borrowed, returned and other related tasks.
