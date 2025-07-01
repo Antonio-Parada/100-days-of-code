@@ -271,8 +271,8 @@ Notes: Implemented a basic command-line typing practice application with random 
 Description: Build a software that will spell check and check simple grammatical errors in any text you write. For additional points/complexity, try to guess the mood (happy text, formal letter, etc) of the text and suggest appropriate changes.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a basic Python script using TextBlob for spell checking and sentiment analysis.
 
 #### News Aggregator
 Description: Build an app that will present you daily news from credible sources. Make sure you pool unique information about a given news headline from different sites to remove any bias that may be present in a given source.
