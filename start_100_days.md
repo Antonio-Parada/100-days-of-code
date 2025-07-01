@@ -443,8 +443,8 @@ Notes: Implemented a basic Python script simulating a command-line interpreter w
 Description: Write a script that goes through your OOPS code and creates a well-formatted UML diagram for your code.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a basic Python script to parse Python code using the `ast` module and extract class names, attributes, and methods for conceptual UML representation.
 
 #### Pathfinding Visualizer
 Description: Make a visualizer for the different pathfinding algorithms. Add this to a maze maker and you have a program that can generate and solve mazes.
