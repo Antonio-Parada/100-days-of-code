@@ -236,8 +236,8 @@ Notes: Implemented a basic command-line stopwatch with start, stop, reset, and l
 Description: Build a web app that can shorten any URL that the user provides. You can either code an algorithm that shortens and stores the user provide URL or use an API.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a basic command-line URL shortener using MD5 hashing and base64 encoding for short code generation.
 
 #### Payment System
 Description: Build a payment interface that can deal with fake cash (better if you can deal with real currency, although I don't know if you have to take extra steps for that). Users should be able to receive and send money, and also check their current balance.
