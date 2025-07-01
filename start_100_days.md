@@ -89,8 +89,8 @@ Notes: Implemented a basic Flask blog with static posts and routing.
 Description: If you are ever interested in showcasing the things you have built, build a portfolio website! Building a website to display all the stuff will teach you a lot about website design in general (if you've never built a website before).
 Suggested Language: JavaScript, HTML, CSS
 Suggested Frameworks/Tools: GatsbyJS
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Created a basic portfolio website with HTML sections, CSS styling, and smooth scrolling JavaScript.
 
 #### Animated Navigation Toggle
 Description: Although it may seem like a small task, building an animated navigation toggle will teach you a lot about web development. Explore all the ideas that you can play with and see if you can build something truly fascinating!
