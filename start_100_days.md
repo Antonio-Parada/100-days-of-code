@@ -320,8 +320,8 @@ Notes: Implemented a basic Python script for webcam video capture and display us
 Description: Build an app for a hypothetical (or better, a real one near you) library that will help in management. You need to keep track of books you have, books to order, people with access to the library, books borrowed, returned and other related tasks.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a basic command-line library management system with functionalities for adding books, registering members, borrowing, returning, and listing books and members.
 
 #### Relational Database Management System
 Description: Build your own database management system like MySQL or PostgreSQL. It doesn't have to be compatible with them, but it does need to help users manage their data efficiently and create relational tables.
