@@ -201,8 +201,8 @@ Notes: Implemented a basic command-line survey application with survey creation,
 Description: Build a piece of software that will help you browse any HTML page. For bonus points, add additional features like those in Chrome and Firefox.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a basic Python script that opens a given URL in the default system web browser.
 
 #### Weather App
 Description: Build an app that gets the weather at your location in the current time. You can either use a web scraper in the background to collect the data or use a weather API.
