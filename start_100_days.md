@@ -450,8 +450,8 @@ Notes: Implemented a basic Python script to parse Python code using the `ast` mo
 Description: Make a visualizer for the different pathfinding algorithms. Add this to a maze maker and you have a program that can generate and solve mazes.
 Suggested Language: Processing, JavaScript
 Suggested Frameworks/Tools: P5.js (JavaScript)
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a web-based visualization of Breadth-First Search (BFS) on a grid, showing visited nodes and the shortest path.
 
 #### Version Control System
 Description: Make a proper version control system like git that can keep track of any changes that you make to your project.
