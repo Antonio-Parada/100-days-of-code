@@ -54,6 +54,7 @@
 - Started Build an OS project: Created conceptual C kernel and Assembly bootloader files.
 - Started Audio to Sign Language Translator project: Implemented a basic Python script simulating speech recognition and conceptual sign language mapping.
 - Started Shuffle Deck project: Implemented a web-based visualization of card shuffling using Fisher-Yates algorithm.
+- Started Shuffle Deck project: Implemented a web-based visualization of card shuffling using Fisher-Yates algorithm.
 - Started Spam Classifier project: Implemented a basic rule-based Python script for spam classification.
 - Started Face Tracker project: Implemented a basic Python script for real-time face detection using OpenCV.
 - Started Deal Finder project: Implemented a basic Python script simulating price tracking and deal alerts using BeautifulSoup.
