@@ -1,5 +1,9 @@
 import socket
 import os
+import logging
+
+# Configure logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 HOST = '127.0.0.1'  # Standard loopback interface address (localhost)
 PORT = 8080         # Port to listen on (non-privileged ports are > 1023)
@@ -18,50 +22,103 @@ MIME_TYPES = {
 
 def parse_request(request_data):
     lines = request_data.split('\r\n')
+    if not lines:
+        return None, None, None, None
+
     request_line = lines[0].split(' ')
+    if len(request_line) != 3:
+        return None, None, None, None # Malformed request line
+
     method = request_line[0]
     path = request_line[1]
     http_version = request_line[2]
-    return method, path, http_version
 
-def handle_request(method, path):
+    headers = {}
+    body = ""
+    header_end_index = -1
+    for i, line in enumerate(lines[1:]):
+        if not line:
+            header_end_index = i + 1
+            break
+        if ': ' in line:
+            key, value = line.split(': ', 1)
+            headers[key.lower()] = value
+    
+    if header_end_index != -1:
+        body = '\r\n'.join(lines[header_end_index + 1:])
+
+    return method, path, http_version, body
+
+def send_response(conn, status_code, content_type, content):
+    status_messages = {
+        200: "OK",
+        400: "Bad Request",
+        404: "Not Found",
+        500: "Internal Server Error"
+    }
+    status_message = status_messages.get(status_code, "Unknown")
+    
+    response_headers = f"HTTP/1.1 {status_code} {status_message}\r\n"
+    response_headers += f"Content-Type: {content_type}\r\n"
+    response_headers += f"Content-Length: {len(content)}\r\n\r\n"
+    
+    conn.sendall(response_headers.encode('utf-8') + content)
+
+def handle_get_request(path):
     if path == '/':
         path = '/index.html'
 
     file_path = os.path.join(WEB_ROOT, path[1:])
 
     if os.path.exists(file_path) and os.path.isfile(file_path):
-        with open(file_path, 'rb') as f:
-            content = f.read()
-        
-        _, ext = os.path.splitext(file_path)
-        content_type = MIME_TYPES.get(ext, 'application/octet-stream')
-
-        response_headers = f"HTTP/1.1 200 OK\r\nContent-Type: {content_type}\r\nContent-Length: {len(content)}\r\n\r\n"
-        return response_headers.encode('utf-8') + content
+        try:
+            with open(file_path, 'rb') as f:
+                content = f.read()
+            
+            _, ext = os.path.splitext(file_path)
+            content_type = MIME_TYPES.get(ext, 'application/octet-stream')
+            return 200, content_type, content
+        except Exception as e:
+            logging.error(f"Error reading file {file_path}: {e}")
+            return 500, 'text/html', b"<h1>500 Internal Server Error</h1>"
     else:
-        response_body = b"<h1>404 Not Found</h1>"
-        response_headers = f"HTTP/1.1 404 Not Found\r\nContent-Type: text/html\r\nContent-Length: {len(response_body)}\r\n\r\n"
-        return response_headers.encode('utf-8') + response_body
+        return 404, 'text/html', b"<h1>404 Not Found</h1>"
+
+def handle_post_request(path, body):
+    logging.info(f"Received POST request for path: {path} with body: {body}")
+    # For demonstration, just echo the body back
+    response_content = f"<h1>POST Request Received</h1><p>You sent: {body}</p>".encode('utf-8')
+    return 200, 'text/html', response_content
 
 def run_server():
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         s.bind((HOST, PORT))
         s.listen()
-        print(f"Listening on {HOST}:{PORT}")
+        logging.info(f"Listening on {HOST}:{PORT}")
         while True:
             conn, addr = s.accept()
             with conn:
-                print(f"Connected by {addr}")
-                data = conn.recv(1024).decode('utf-8')
+                logging.info(f"Connected by {addr}")
+                data = conn.recv(4096).decode('utf-8') # Increased buffer size
                 if not data:
                     continue
 
-                method, path, http_version = parse_request(data)
-                print(f"Method: {method}, Path: {path}, HTTP Version: {http_version}")
+                method, path, http_version, body = parse_request(data)
+                
+                if not method or not path or not http_version:
+                    send_response(conn, 400, 'text/html', b"<h1>400 Bad Request</h1>")
+                    continue
 
-                response = handle_request(method, path)
-                conn.sendall(response)
+                logging.info(f"Received {method} request for {path} (HTTP/{http_version})")
+
+                if method == 'GET':
+                    status_code, content_type, content = handle_get_request(path)
+                elif method == 'POST':
+                    status_code, content_type, content = handle_post_request(path, body)
+                else:
+                    status_code, content_type, content = 400, 'text/html', b"<h1>400 Bad Request - Method Not Supported</h1>"
+                
+                send_response(conn, status_code, content_type, content)
 
 if __name__ == "__main__":
     run_server()
