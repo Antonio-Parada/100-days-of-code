@@ -378,8 +378,8 @@ Notes: Implemented a basic Python script for webcam video capture and display us
 Description: Input a video and get a subtitle! Build a software that automatically creates subtitles from a provided video. It may seem difficult in the beginning, but look up Natural Language Processing to see how far machines already are with regard to understanding human language.
 Suggested Language: Python (As it would be really easy to implement with available libraries)
 Suggested Frameworks/Tools: [autosub](https://pypi.org/project/autosub/)
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a basic Python script simulating subtitle generation from audio input, demonstrating the concept of speech-to-text and SRT formatting.
 
 #### Automatic Logo Generator
 Description: Build a software that takes in a company name and some related keywords to generate a brand new logo for the user. Make the logo editable so the user can make any changes if they don't like the generated output.
