@@ -1,0 +1,29 @@
+# Python virtual environment
+.venv/
+virtualenv/
+
+# Node.js modules
+node_modules/
+
+# macOS specific files
+.DS_Store
+
+# Windows specific files
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+
+# Build artifacts
+build/
+dist/
+__pycache__/
+
+# IDE specific files (example for VS Code)
+.vscode/
+
+# Any project-specific temporary files or outputs
+*.sqlite3
+*.db
