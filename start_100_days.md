@@ -180,8 +180,8 @@ Notes: Implemented a basic command-line text editor with file open/save, display
 Description: This is probably the hardest one on the list and the most vague one too. Design a system that takes in text input and generates applications (or at least application interfaces) based on the text description. You can also use a drag-and-drop like feature to let users build the app.
 Suggested Language: -
 Suggested Frameworks/Tools: -
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a Python script to parse a simple DSL for UI elements and generate a textual representation of the application interface.
 
 #### Drawing App
 Description: Build an app that lets the user draw anything and save it as an image. For extra points, add colouring and other cool things like animations.
