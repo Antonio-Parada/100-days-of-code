@@ -119,8 +119,8 @@ Notes: Implemented a basic rule-based CLI chatbot with predefined responses.
 Description:
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Created a basic Python script for a Slack bot, demonstrating how to use the slack_sdk to send messages. Requires further setup with Slack API tokens and event subscriptions to be fully functional.
 
 #### Twitter Bot
 Description: Build a bot that will either

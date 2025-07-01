@@ -14,3 +14,4 @@
 - Started Animated Navigation Toggle project: Implemented a responsive hamburger menu with CSS transitions and JavaScript toggling.
 - Started Country Lookup using IP address project: Implemented a Python script to retrieve country and location details from an IP address using a public API.
 - Started Chatbot project: Implemented a basic rule-based CLI chatbot.
+- Started Slack Bot project: Created a basic Python script with placeholder for Slack API interaction.
