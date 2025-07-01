@@ -143,8 +143,8 @@ Notes: Implemented a basic CLI-simulated messenger bot with command processing f
 Description: Build a bot for WhatsApp that can scrape information from the internet like news, wikipedia entries, and other things. Make it able to keep track of some events like your/someone else's birthday and send an automatic message wishing you/the other person.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a Python script simulating Wikipedia scraping and reminder management for a WhatsApp bot. Actual WhatsApp integration requires specific API setup.
 
 ### Software & Apps
 
