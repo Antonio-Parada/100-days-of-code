@@ -299,8 +299,8 @@ Notes: Implemented a basic Python script simulating traffic information and rout
 Description: Build a virtual assistant that will help you carry out tasks like calling people, scheduling tasks, creating todo lists, taking notes, .. you get the point.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a basic command-line virtual assistant with functionalities for managing todo lists and taking notes.
 
 #### Antivirus Software
 Description: Build an antivirus software that will protect you from viruses and other computer worms and stuff. Make sure you update it frequently to deal with the newer viruses.
