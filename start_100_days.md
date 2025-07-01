@@ -510,8 +510,8 @@ Notes: Implemented a basic Pygame-based Pong game with two player-controlled pad
 Description: Add to the Pong program you created above. Create an AI opponent to play against in a single player mode.
 Suggested Language: Python (or any other language of choice)
 Suggested Frameworks/Tools: TensorFlow, PyTorch, openai/gym
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a basic rule-based AI opponent for the Pong game that tracks the ball's vertical position.
 
 #### Risk
 Description: Try coding the classic board game of [Risk](https://en.wikipedia.org/wiki/Risk_(game)). Make sure you know all the rules and understand the game properly before you code it.

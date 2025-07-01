@@ -11,3 +11,4 @@
 - Started Pong project: Implemented a basic Pygame-based Pong game with two paddles and a ball.
 - Started Expense Tracker project: Implemented a basic command-line expense tracker with adding expenses and category-wise summary.
 - Started Password Strength Checker project: Implemented a basic Python script to assess password strength based on criteria.
+- Started Pong AI project: Implemented a basic rule-based AI opponent for the Pong game.
