@@ -222,8 +222,8 @@ Notes: Implemented a basic Python script to convert simple English-like mathemat
 Description: Build a music player app that can play music from mp3 files and also have functionality for forward, rewind, pause, and play.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a basic command-line music player using pygame.mixer with play, pause, unpause, and stop functionalities.
 
 #### Stopwatch App
 Description: Build a stopwatch app/web app. It should also be able to lap time.
