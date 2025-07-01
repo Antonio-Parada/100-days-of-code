@@ -19,4 +19,3 @@ This project involves building a piece of software that will analyze pictures (o
 *   [ ] Displaying the image/video with detected faces.
 
 ## Notes
-
