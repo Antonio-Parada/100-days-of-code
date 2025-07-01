@@ -364,8 +364,8 @@ Notes: Implemented a basic rule-based Python script for music recommendations ba
 Description: Build an app to translate text from one language to another. For bonus points include an image translator that can get text from image and translate it.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a basic rule-based Python script for word-by-word translation using a predefined dictionary.
 
 #### Hand Gesture Recognition
 Description: Build a piece of software that can recognise gestures from a camera video and then carry out certain tasks based on the gesture.
