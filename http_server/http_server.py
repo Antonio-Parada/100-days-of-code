@@ -3,6 +3,8 @@ import os
 import logging
 import threading
 import sys
+import ssl
+import json
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -12,6 +14,9 @@ from . import config
 HOST = config.HOST
 PORT = config.PORT
 WEB_ROOT = os.path.join(os.path.dirname(__file__), config.WEB_ROOT)
+CERT_FILE = os.path.join(os.path.dirname(__file__), config.CERT_FILE)
+KEY_FILE = os.path.join(os.path.dirname(__file__), config.KEY_FILE)
+TEMPLATES_ROOT = os.path.join(os.path.dirname(__file__), config.TEMPLATES_ROOT)
 
 MIME_TYPES = {
     '.html': 'text/html',
@@ -23,6 +28,19 @@ MIME_TYPES = {
     '.gif': 'image/gif',
     '.ico': 'image/x-icon',
 }
+
+def render_template(template_name, context={}):
+    template_path = os.path.join(TEMPLATES_ROOT, template_name)
+    if not os.path.exists(template_path):
+        raise FileNotFoundError(f"Template not found: {template_name}")
+    
+    with open(template_path, 'r', encoding='utf-8') as f:
+        template_content = f.read()
+    
+    for key, value in context.items():
+        template_content = template_content.replace(f"{{{{ {key} }}}}", str(value))
+    
+    return template_content.encode('utf-8')
 
 def parse_request(request_data):
     lines = request_data.split('\r\n')
@@ -49,7 +67,28 @@ def parse_request(request_data):
     
     body = '\r\n'.join(lines[body_start_index:]) if body_start_index != -1 else ""
 
-    return method, path, http_version, headers, body
+    # Parse body based on Content-Type
+    parsed_body = {}
+    content_type = headers.get('content-type', '')
+    if 'application/x-www-form-urlencoded' in content_type:
+        for param in body.split('&'):
+            if '=' in param:
+                key, value = param.split('=', 1)
+                parsed_body[key] = value
+    elif 'application/json' in content_type:
+        try:
+            import json
+            parsed_body = json.loads(body)
+        except json.JSONDecodeError:
+            logging.warning("Failed to parse JSON body.")
+            parsed_body = {}
+
+    return method, path, http_version, headers, parsed_body
+
+MIDDLEWARE = []
+
+def use_middleware(middleware_func):
+    MIDDLEWARE.append(middleware_func)
 
 def send_response(conn, status_code, content_type, content, headers=None):
     status_messages = {
@@ -138,6 +177,13 @@ def handle_client(conn, addr):
             return
 
         logging.info(f"Received {method} request for {path} (HTTP/{http_version}) with headers: {headers}")
+
+        # Apply middleware
+        for middleware_func in MIDDLEWARE:
+            middleware_response = middleware_func(method, path, http_version, headers, body)
+            if middleware_response:
+                send_response(conn, *middleware_response)
+                return
 
         handler = ROUTES.get(method, {}).get(path)
 
