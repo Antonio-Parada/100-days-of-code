@@ -257,8 +257,8 @@ Notes: Implemented a basic Python script using Pillow to overlay text on images 
 Description: Build a Pomodoro timer that will help you take breaks at proper times while doing a task. For bonus points include different Pomodoro timer formats.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a basic command-line Pomodoro timer with work/break cycles, start, pause, and reset functionalities.
 
 #### Typing Practice
 Description: Build an app that lets you practice typing. Make it generate random sentences and see how fast you can type the sentences. Typing is something that many developers completely ignore, but it is one of the most important skills that someone working with computers should have.
