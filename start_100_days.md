@@ -327,8 +327,8 @@ Notes: Implemented a basic command-line library management system with functiona
 Description: Build your own database management system like MySQL or PostgreSQL. It doesn't have to be compatible with them, but it does need to help users manage their data efficiently and create relational tables.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a basic command-line RDBMS with functionalities for creating databases and tables, inserting data, and selecting data with conditions.
 
 ### Artificial Intelligence
 
