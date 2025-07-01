@@ -75,8 +75,8 @@ Notes: Implemented basic network usage tracking using psutil, displaying total s
 Description: Build the ideal product landing page according to you. Choose a product, build a page and showcase that on your portfolio.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Created a basic product landing page with HTML structure, CSS styling, and a simple JavaScript interaction.
 
 #### Blog
 Description: A blog is a must have for everyone (according to me). Combine that fact with the fact that you learn a lot of things while building your own blog from scratch, and voila!
