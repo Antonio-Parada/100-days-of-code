@@ -343,8 +343,8 @@ Notes: Implemented a basic Python script for real-time face detection using Open
 Description: Build a spam classifier that filters ads and other unrequired emails from people that you don't really want to look at.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a basic rule-based Python script for spam classification using keyword matching.
 
 #### Spoiler Blocker
 Description: Build a browser extension that blocks movie spoilers on websites. I put it in AI as you have to think of a changing algorithm that should be smart enough to identify spoilers from a piece of text.
