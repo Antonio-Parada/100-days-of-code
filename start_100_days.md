@@ -464,8 +464,8 @@ Notes: Implemented a basic command-line version control system with functionalit
 Description: Code a programming language from scratch. This project will give you great insights into why languages are structured the way they are and which languages suit which tasks better. There are quite a few programming languages, thus, incorporate some really weird (or helpful) features to make your language stand out (e.g. check out [brainfuck](https://en.wikipedia.org/wiki/Brainfuck)).
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a basic Python script for a lexer (tokenizer) for a simple language, demonstrating the first step in building a programming language.
 
 ### Cryptography
 

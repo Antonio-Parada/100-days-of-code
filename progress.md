@@ -5,3 +5,4 @@
 - Started UML Diagram Generator project: Implemented a basic Python script to parse Python code and extract class, attribute, and method information.
 - Started Pathfinding Visualizer project: Implemented a web-based visualization of Breadth-First Search (BFS) on a grid.
 - Started Version Control System project: Implemented a basic command-line VCS with init, add, commit, and log functionalities.
+- Started Programming Language project: Implemented a basic Python script for a lexer (tokenizer) for a simple language.
