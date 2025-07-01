@@ -2,6 +2,10 @@ import requests
 from bs4 import BeautifulSoup
 import random
 import time
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service as ChromeService
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.options import Options
 
 # List of user-agents to rotate through
 USER_AGENTS = [
@@ -41,7 +45,7 @@ def scrape_title(url, use_proxies=False, delay=1):
                 'https': proxy,
             }
 
-        print(f"Scraping {url}...")
+        print(f"Scraping {url} with requests...")
         response = requests.get(url, headers=headers, proxies=proxies, timeout=10)
         # Raise an exception for bad status codes (4xx or 5xx)
         response.raise_for_status()
@@ -52,24 +56,42 @@ def scrape_title(url, use_proxies=False, delay=1):
     except requests.exceptions.RequestException as e:
         return f"Error fetching URL: {e}"
 
-if __name__ == "__main__":
-    # Example usage with rate limiting:
-    target_urls = [
-        "http://example.com",
-        "http://example.com", # Scraping the same page again to show delay
-        "http://example.com",
-    ]
-    
-    print("--- Scraping with a 2-second delay between requests ---")
-    for url in target_urls:
-        title = scrape_title(url, delay=2)
-        print(f"Page Title: {title}\n")
+def scrape_with_selenium(url, delay=2):
+    """
+    Fetches the HTML content of a URL using Selenium to handle dynamic content,
+    and returns its title.
+    """
+    try:
+        # Set up headless Chrome options
+        chrome_options = Options()
+        chrome_options.add_argument("--headless")
+        chrome_options.add_argument(f"user-agent={random.choice(USER_AGENTS)}")
 
-    # To scrape with proxies (make sure to add proxies to the PROXIES list):
-    if PROXIES:
-        print("\n--- Scraping with proxies and a 3-second delay ---")
-        for url in target_urls:
-            title_with_proxy = scrape_title(url, use_proxies=True, delay=3)
-            print(f"Page Title (with proxy): {title_with_proxy}\n")
-    else:
-        print("\nNo proxies configured. Skipping proxy test.")
+        # Set up the Chrome driver
+        driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=chrome_options)
+
+        print(f"Scraping {url} with Selenium...")
+        driver.get(url)
+
+        # Wait for the page to load (adjust as needed)
+        time.sleep(delay)
+
+        title = driver.title
+        driver.quit()
+        return title
+
+    except Exception as e:
+        return f"Error scraping with Selenium: {e}"
+
+if __name__ == "__main__":
+    # Example usage of the original scraper:
+    target_url = "http://example.com"
+    print("--- Scraping with requests ---")
+    title = scrape_title(target_url)
+    print(f"Page Title: {title}\n")
+
+    # Example usage of the Selenium scraper:
+    # This is useful for pages that load content with JavaScript.
+    print("--- Scraping with Selenium ---")
+    dynamic_title = scrape_with_selenium(target_url)
+    print(f"Page Title (dynamic): {dynamic_title}\n")

@@ -3,3 +3,4 @@
 - Added user-agent rotation to mimic different browsers.
 - Included rate limiting/delays between requests for politeness.
 - Completed Web Scraper project with user-agent rotation, proxy support, rate limiting, and Selenium integration.
+- Started Port Scanner project: Implemented basic TCP port scanning functionality.

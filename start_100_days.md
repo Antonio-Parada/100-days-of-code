@@ -40,8 +40,8 @@ Notes: Implemented dynamic content scraping with Selenium, proxy support, user-a
 Description: Build a port scanner application that can probe a server or host for open ports. You will need some technical knowledge regarding how networks work and how you can scan for ports or classify them.
 Suggested Language: Java, C++, Python
 Suggested Frameworks/Tools: [socket](https://docs.python.org/3/library/socket.html) Python library
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented basic TCP port scanning with command-line arguments for host and port range.
 
 #### Packet Sniffer
 Description: A packet sniffer is used to monitor network traffic by examining streams of data packets that flow between computers on a network. To start with the project, study network protocols properly. Then dive into implementing an application that tracks down network packets and parses its content in a human readable form.

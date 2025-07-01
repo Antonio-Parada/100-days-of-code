@@ -1,0 +1,1 @@
+docs: Mark Web Scraper project as completed and add notes
