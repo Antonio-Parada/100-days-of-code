@@ -159,8 +159,8 @@ Notes: Implemented a basic command-line quiz application with multiple-choice qu
 Description: Build a firewall software that can regulate the network connections for the user and also block/notify of any suspicious action from any website/internal software/external agent.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a conceptual Python script demonstrating packet inspection logic for blocking rules based on destination port (e.g., blocking HTTP traffic).
 
 #### ToDo List
 Description: Build a To Do app that can track the various stages of a given work (todo, ongoing, completed). For bonus points, make it work with recurring tasks and incorporate task scheduling (when to do what/a deadline for tasks).
