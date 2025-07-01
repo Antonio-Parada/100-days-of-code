@@ -6,3 +6,4 @@
 - Started Pathfinding Visualizer project: Implemented a web-based visualization of Breadth-First Search (BFS) on a grid.
 - Started Version Control System project: Implemented a basic command-line VCS with init, add, commit, and log functionalities.
 - Started Programming Language project: Implemented a basic Python script for a lexer (tokenizer) for a simple language.
+- Started Codec Software project: Implemented a basic command-line Caesar cipher for text encryption and decryption.

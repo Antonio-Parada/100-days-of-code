@@ -473,8 +473,8 @@ Notes: Implemented a basic Python script for a lexer (tokenizer) for a simple la
 Description: Build a software that will encrypt and decrypt text for you. Incorporate quite a few algorithms to provide flexibility to the user.
 Suggested Language: C, C++, Java, Python
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a basic command-line Caesar cipher for text encryption and decryption.
 
 #### Password Manager
 Description: Build a software that can manage the different passwords that you use on different websites. For bonus points incorporate a random password generator.
