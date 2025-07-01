@@ -4,3 +4,4 @@
 - Included rate limiting/delays between requests for politeness.
 - Completed Web Scraper project with user-agent rotation, proxy support, rate limiting, and Selenium integration.
 - Started Port Scanner project: Implemented basic TCP port scanning functionality.
+- Started Packet Sniffer project: Implemented basic packet capturing and parsing of Ethernet, IP, TCP, UDP, and ICMP headers.

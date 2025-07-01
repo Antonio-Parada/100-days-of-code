@@ -47,8 +47,8 @@ Notes: Implemented basic TCP port scanning with command-line arguments for host 
 Description: A packet sniffer is used to monitor network traffic by examining streams of data packets that flow between computers on a network. To start with the project, study network protocols properly. Then dive into implementing an application that tracks down network packets and parses its content in a human readable form.
 Suggested Language: Java, C++
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented basic packet capturing and parsing of Ethernet, IP, TCP, UDP, and ICMP headers.
 
 #### P2P File Sharing
 Description: Build an app that will allow for peer-to-peer file sharing securely over the internet. This will help you transfer files securely from one location to another or send something to your friend.
