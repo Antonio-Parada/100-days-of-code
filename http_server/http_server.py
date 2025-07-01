@@ -1,13 +1,17 @@
 import socket
 import os
 import logging
+import threading
+import sys
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-HOST = '127.0.0.1'  # Standard loopback interface address (localhost)
-PORT = 8080         # Port to listen on (non-privileged ports are > 1023)
-WEB_ROOT = os.path.join(os.path.dirname(__file__), 'static')
+from . import config
+
+HOST = config.HOST
+PORT = config.PORT
+WEB_ROOT = os.path.join(os.path.dirname(__file__), config.WEB_ROOT)
 
 MIME_TYPES = {
     '.html': 'text/html',
@@ -120,46 +124,66 @@ ROUTES = {
     },
 }
 
+def handle_client(conn, addr):
+    try:
+        logging.info(f"Connected by {addr}")
+        data = conn.recv(4096).decode('utf-8') # Increased buffer size
+        if not data:
+            return
+
+        method, path, http_version, headers, body = parse_request(data)
+        
+        if not method or not path or not http_version:
+            send_response(conn, 400, 'text/html', b"<h1>400 Bad Request</h1>")
+            return
+
+        logging.info(f"Received {method} request for {path} (HTTP/{http_version}) with headers: {headers}")
+
+        handler = ROUTES.get(method, {}).get(path)
+
+        if handler:
+            if method == 'GET':
+                status_code, content_type, content, custom_headers = handler(path)
+            elif method == 'POST' or method == 'PUT':
+                status_code, content_type, content, custom_headers = handler(path, body, headers)
+            elif method == 'DELETE':
+                status_code, content_type, content, custom_headers = handler(path, headers)
+            else:
+                status_code, content_type, content, custom_headers = 405, 'text/html', b"<h1>405 Method Not Allowed</h1>", {}
+        else:
+            # Fallback for static files if not explicitly routed
+            if method == 'GET':
+                status_code, content_type, content, custom_headers = handle_get_request(path)
+            else:
+                status_code, content_type, content, custom_headers = 404, 'text/html', b"<h1>404 Not Found</h1>", {}
+        
+        send_response(conn, status_code, content_type, content, custom_headers)
+    except Exception as e:
+        logging.error(f"Error handling client {addr}: {e}")
+    finally:
+        conn.close()
+
 def run_server():
-    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-        s.bind((HOST, PORT))
-        s.listen()
+    server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+    try:
+        server_socket.bind((HOST, PORT))
+        server_socket.listen()
         logging.info(f"Listening on {HOST}:{PORT}")
+
         while True:
-            conn, addr = s.accept()
-            with conn:
-                logging.info(f"Connected by {addr}")
-                data = conn.recv(4096).decode('utf-8') # Increased buffer size
-                if not data:
-                    continue
+            conn, addr = server_socket.accept()
+            client_handler = threading.Thread(target=handle_client, args=(conn, addr))
+            client_handler.daemon = True # Allow main program to exit even if threads are running
+            client_handler.start()
 
-                method, path, http_version, headers, body = parse_request(data)
-                
-                if not method or not path or not http_version:
-                    send_response(conn, 400, 'text/html', b"<h1>400 Bad Request</h1>")
-                    continue
-
-                logging.info(f"Received {method} request for {path} (HTTP/{http_version}) with headers: {headers}")
-
-                handler = ROUTES.get(method, {}).get(path)
-
-                if handler:
-                    if method == 'GET':
-                        status_code, content_type, content, custom_headers = handler(path)
-                    elif method == 'POST' or method == 'PUT':
-                        status_code, content_type, content, custom_headers = handler(path, body, headers)
-                    elif method == 'DELETE':
-                        status_code, content_type, content, custom_headers = handler(path, headers)
-                    else:
-                        status_code, content_type, content, custom_headers = 405, 'text/html', b"<h1>405 Method Not Allowed</h1>", {}
-                else:
-                    # Fallback for static files if not explicitly routed
-                    if method == 'GET':
-                        status_code, content_type, content, custom_headers = handle_get_request(path)
-                    else:
-                        status_code, content_type, content, custom_headers = 404, 'text/html', b"<h1>404 Not Found</h1>", {}
-                
-                send_response(conn, status_code, content_type, content, custom_headers)
+    except KeyboardInterrupt:
+        logging.info("Server shutting down gracefully...")
+    except Exception as e:
+        logging.error(f"Server error: {e}")
+    finally:
+        server_socket.close()
+        logging.info("Server socket closed.")
 
 if __name__ == "__main__":
     run_server()
