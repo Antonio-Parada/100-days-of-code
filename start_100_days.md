@@ -423,7 +423,7 @@ Description: Build a webpage/video that will visualize the different sorting alg
 Suggested Language: Processing, JavaScript
 Suggested Frameworks/Tools: P5.js (JavaScript)
 Status: [x] Completed
-Notes: Implemented a web-based visualization of Bubble Sort using HTML Canvas, showing bar heights and highlighting comparisons.
+Notes: Implemented a web-based visualization of Bubble Sort using HTML Canvas, showing bar heights and highlighting comparisons. Implemented a web-based visualization of Bubble Sort using HTML Canvas, showing bar heights and highlighting comparisons.
 
 #### Static Code Analyzer
 Description: Make a software that will go through your code (without executing it) and check for any inconsistencies or errors (syntax errors, indentation, etc) that may cause any problems during execution.
