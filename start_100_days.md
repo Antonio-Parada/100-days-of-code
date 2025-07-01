@@ -187,8 +187,8 @@ Notes: Implemented a Python script to parse a simple DSL for UI elements and gen
 Description: Build an app that lets the user draw anything and save it as an image. For extra points, add colouring and other cool things like animations.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a web-based drawing application using HTML Canvas with basic drawing, color selection, brush size, clear canvas, and save as PNG functionalities.
 
 #### Survey App
 Description: Build an app/web app that will let anyone create survey questions and circulate it via email to record responses and then analyze the data collected.

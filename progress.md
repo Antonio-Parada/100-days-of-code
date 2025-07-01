@@ -19,6 +19,7 @@
 - Started WhatsApp Butler project: Implemented a Python script simulating Wikipedia scraping and reminder management for a WhatsApp bot.
 - Started Quiz App project: Implemented a basic command-line quiz application with multiple-choice questions and scoring.
 - Started Text Editor project: Implemented a basic command-line text editor with file open/save, display, insert, delete, and replace line functionalities.
+- Started Drawing App project: Implemented a web-based drawing application using HTML Canvas with basic drawing, color, brush size, clear, and save functionalities.
 - Started Application Builder project: Implemented a Python script to parse a simple DSL for UI elements and generate a textual representation.
 - Started ToDo List project: Implemented a basic command-line ToDo list application with task management and status updates.
 - Started Firewall project: Implemented a conceptual Python script demonstrating packet inspection logic for blocking rules.
