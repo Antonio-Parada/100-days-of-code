@@ -292,8 +292,8 @@ Notes: Implemented a basic command-line calorie counter with food logging and da
 Description: Build an app (phone app will be better) that finds how congested one route is and then suggests you a better route to take to your destination.
 Suggested Language: Java, Kotlin, Swift
 Suggested Frameworks/Tools: Android Studio
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a basic Python script simulating traffic information and route suggestions for different routes.
 
 #### Virtual Assistant
 Description: Build a virtual assistant that will help you carry out tasks like calling people, scheduling tasks, creating todo lists, taking notes, .. you get the point.
