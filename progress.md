@@ -9,4 +9,5 @@
 - Started Codec Software project: Implemented a basic command-line Caesar cipher for text encryption and decryption.
 - Started Password Manager project: Implemented a basic command-line password manager with add, get, and generate functionalities.
 - Started Pong project: Implemented a basic Pygame-based Pong game with two paddles and a ball.
+- Started Expense Tracker project: Implemented a basic command-line expense tracker with adding expenses and category-wise summary.
 - Started Password Strength Checker project: Implemented a basic Python script to assess password strength based on criteria.

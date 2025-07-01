@@ -652,8 +652,8 @@ Notes: Implemented a basic Python script simulating price tracking and deal aler
 Description: Create a simple interface (web app/phone app) you can use to add and categorize your expense. Generate monthly reports based on the inputs and write custom alerts for things like, "spending too much on coffee... as always".
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a basic command-line expense tracker in Python with functionalities to add expenses, categorize them, and view summaries by category and total.
 
 #### Recipe Generator
 Description: The app (or service) should generate new recipes/scrapes recipes from the web. So when you cook by its recipe, you rate it to tell it how good the recipe was.
