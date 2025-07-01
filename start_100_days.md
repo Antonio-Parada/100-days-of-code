@@ -112,8 +112,8 @@ Notes: Implemented a Python script to retrieve country and location details from
 Description: Build a chatbot that you can talk to when bored. For bonus points use machine learning/AI to make it smart. I suggest you to implement it as a simple CLI application.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a basic rule-based CLI chatbot with predefined responses.
 
 #### Slack Bot
 Description:
