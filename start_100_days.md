@@ -503,8 +503,8 @@ Notes: Implemented a basic command-line password strength checker in Python, ass
 Description: Code the game of [pong](https://en.wikipedia.org/wiki/Pong). Make it multiplayer and visually appealing.
 Suggested Language: Python (or any other language of choice)
 Suggested Frameworks/Tools: Pygame (Python)
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a basic Pygame-based Pong game with two player-controlled paddles, a ball, and collision detection.
 
 #### Pong AI
 Description: Add to the Pong program you created above. Create an AI opponent to play against in a single player mode.
