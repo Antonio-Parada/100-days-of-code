@@ -166,8 +166,8 @@ Notes: Implemented a conceptual Python script demonstrating packet inspection lo
 Description: Build a To Do app that can track the various stages of a given work (todo, ongoing, completed). For bonus points, make it work with recurring tasks and incorporate task scheduling (when to do what/a deadline for tasks).
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a basic command-line ToDo list application with task adding, status updates, and display by status.
 
 #### Text Editor
 Description: Build a simple text editor that can help you open, read from and write to text files. For bonus points incorporate features like the find tool and regex search and replace.

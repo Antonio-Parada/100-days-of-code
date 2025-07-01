@@ -18,5 +18,6 @@
 - Started Messenger Bot project: Implemented a basic CLI-simulated messenger bot with command processing for coin flips, dice rolls, and jokes.
 - Started WhatsApp Butler project: Implemented a Python script simulating Wikipedia scraping and reminder management for a WhatsApp bot.
 - Started Quiz App project: Implemented a basic command-line quiz application with multiple-choice questions and scoring.
+- Started ToDo List project: Implemented a basic command-line ToDo list application with task management and status updates.
 - Started Firewall project: Implemented a conceptual Python script demonstrating packet inspection logic for blocking rules.
 - Started Slack Bot project: Created a basic Python script with placeholder for Slack API interaction.
