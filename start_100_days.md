@@ -436,8 +436,8 @@ Notes:
 Description: If you are building the Operating System, you will surely need a Command Line Terminal. Try to clone the bash shell or Windows PowerShell as an independent project to make it easier while you build your own OS.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a basic Python script simulating a command-line interpreter with support for 'echo', 'cd', and 'ls'/'dir' commands.
 
 #### UML Diagram Generator
 Description: Write a script that goes through your OOPS code and creates a well-formatted UML diagram for your code.
