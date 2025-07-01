@@ -392,8 +392,8 @@ Notes: Implemented a basic Python script using Pillow to generate logos with com
 Description: Build a recommendation system that lets you or any users choose the next movie that you want to watch. Instead of copying an existing movie recommender with a well studied algorithm, try to come up with your own algorithm and test it out.
 Suggested Language: Python (or any other language you are comfortable with)
 Suggested Frameworks/Tools: -
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a basic rule-based Python script for movie recommendations based on predefined genres.
 
 #### Audio to Sign Language Translator
 Description: Similar to the video translator, but now you need to translate an audio to sign language. The sign language part can be in the form of a series of images or a video.
