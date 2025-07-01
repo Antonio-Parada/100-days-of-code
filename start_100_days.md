@@ -408,8 +408,8 @@ Notes: Implemented a basic Python script simulating speech recognition and conce
 Description: This project will be technically challenging and will deepen your understanding of how computers and operating systems work. Building an OS from the ground up is a really daunting task but you will surely find a way to do it.
 Suggested Language: low-level languages like C/C++.
 Suggested Frameworks/Tools: -
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Created conceptual C kernel and Assembly bootloader files, demonstrating the foundational components of an operating system.
 
 #### Shuffle Deck
 Description: Build a web app to visualize the different shuffling algorithms that can be used to shuffle a standard deck of cards.

@@ -51,6 +51,7 @@
 - Started Video Subtitle Generator project: Implemented a basic Python script simulating subtitle generation from audio input.
 - Started Automatic Logo Generator project: Implemented a basic Python script using Pillow to generate logos with text and custom colors.
 - Started Movie Recommendation System project: Implemented a basic rule-based Python script for movie recommendations based on genre.
+- Started Build an OS project: Created conceptual C kernel and Assembly bootloader files.
 - Started Audio to Sign Language Translator project: Implemented a basic Python script simulating speech recognition and conceptual sign language mapping.
 - Started Spam Classifier project: Implemented a basic rule-based Python script for spam classification.
 - Started Face Tracker project: Implemented a basic Python script for real-time face detection using OpenCV.
