@@ -1,3 +1,5 @@
+from textblob import TextBlob
+
 class SimpleSpamClassifier:
     def __init__(self):
         self.spam_keywords = ["free", "win", "prize", "money back", "guarantee", "urgent", "lottery"]

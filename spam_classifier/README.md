@@ -20,4 +20,3 @@ This project involves building a spam classifier that filters unwanted emails or
 *   [ ] (Bonus) Simple command-line interface for classifying new messages.
 
 ## Notes
-

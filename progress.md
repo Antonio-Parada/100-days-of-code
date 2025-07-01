@@ -43,6 +43,8 @@
 - Started Relational Database Management System project: Implemented a basic command-line RDBMS with database/table creation, data insertion, and selection.
 - Started Face Tracker project: Implemented a basic Python script for real-time face detection using OpenCV.
 - Started Spam Classifier project: Implemented a basic rule-based Python script for spam classification.
+- Started Spoiler Blocker project: Implemented a basic browser extension with keyword-based spoiler blurring.
+- Started Spam Classifier project: Implemented a basic rule-based Python script for spam classification.
 - Started Face Tracker project: Implemented a basic Python script for real-time face detection using OpenCV.
 - Started Deal Finder project: Implemented a basic Python script simulating price tracking and deal alerts using BeautifulSoup.
 - Started ToDo List project: Implemented a basic command-line ToDo list application with task management and status updates.

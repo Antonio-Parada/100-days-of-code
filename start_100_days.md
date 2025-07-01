@@ -350,8 +350,8 @@ Notes: Implemented a basic rule-based Python script for spam classification usin
 Description: Build a browser extension that blocks movie spoilers on websites. I put it in AI as you have to think of a changing algorithm that should be smart enough to identify spoilers from a piece of text.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a basic browser extension with a content script to blur predefined spoiler keywords on web pages using CSS.
 
 #### Music Suggestor
 Description: Bored of the same songs but don't know what to try next? Build an AI to suggest you music based on your taste that you are more likely to like.
