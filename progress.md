@@ -1,2 +1,21 @@
 
+- Completed Tic Tac Toe project: Implemented the classic game with a basic AI opponent and win/tie detection.
+- Completed Risk Game project: Implemented a simple CLI combat simulation with dice rolls and army losses.
+- Completed Chess project: Implemented a basic command-line Chess game with board representation, basic move validation, and turn management.
+- Completed Snake project: Implemented the classic Snake game with CLI graphics, food generation, collision detection, and score tracking.
+- Completed Tetris project: Implemented a basic command-line Tetris game with piece generation, movement, line clearing, and score tracking.
+- Completed Flappy Bird project: Implemented a basic command-line Flappy Bird game with gravity, pipes, collision detection, and score tracking.
+- Completed Memory Puzzle project: Implemented a basic command-line Memory Puzzle game with board generation, card revealing, match detection, and attempt tracking.
+- Completed Physics Engine project: Implemented a basic 2D physics engine with particle representation, gravity, wall collisions, and CLI visualization.
+- Completed Tic Tac Toe AI project: Implemented an unbeatable AI for Tic Tac Toe using the Minimax algorithm.
+- Completed Elevator Simulator project: Implemented a basic command-line elevator simulation with floor requests, movement logic, and directional movement.
+- Completed Game of Life project: Implemented Conway's Game of Life with random seeding, pattern seeding, and CLI visualization.
+- Completed Character Generator project: Implemented a basic command-line character generator with random name, class, race, and stat generation.
+- Completed Map Maker project: Implemented a basic command-line map generator using Perlin noise for procedural generation.
 - Completed Recipe Generator project: Implemented a basic command-line recipe generator with random cuisine, ingredients, cooking methods, and spices.
+- Completed Regex Query Tool project: Implemented a basic command-line regex query tool with case-insensitive search and detailed match output.
+- Completed Currency Converter project: Implemented a basic command-line currency converter with predefined exchange rates and error handling.
+- Completed Pixel Art Generator project: Implemented a basic command-line pixel art generator with random art generation and customizable dimensions.
+- Completed Directory Tree Generator project: Implemented a basic command-line directory tree generator with directory traversal and ASCII visualization.
+- Completed Random Username Generator project: Implemented a basic command-line random username generator with customizable options for including numbers.
+- Completed Roman to Decimal Converter project: Implemented a basic command-line Roman to Decimal converter with conversion logic and input validation.
