@@ -1,14 +1,7 @@
-
-- Started Sorting Visualizer project: Implemented a web-based visualization of Bubble Sort using HTML Canvas.
-- Started Static Code Analyzer project: Implemented a basic Python script for simple syntax and indentation checks.
-- Started Command Line Terminal project: Implemented a basic Python script simulating a command-line interpreter with echo, cd, and ls/dir functionalities.
-- Started UML Diagram Generator project: Implemented a basic Python script to parse Python code and extract class, attribute, and method information.
-- Started Pathfinding Visualizer project: Implemented a web-based visualization of Breadth-First Search (BFS) on a grid.
-- Started Version Control System project: Implemented a basic command-line VCS with init, add, commit, and log functionalities.
-- Started Programming Language project: Implemented a basic Python script for a lexer (tokenizer) for a simple language.
-- Started Codec Software project: Implemented a basic command-line Caesar cipher for text encryption and decryption.
-- Started Password Manager project: Implemented a basic command-line password manager with add, get, and generate functionalities.
-- Started Pong project: Implemented a basic Pygame-based Pong game with two paddles and a ball.
-- Started Expense Tracker project: Implemented a basic command-line expense tracker with adding expenses and category-wise summary.
-- Started Password Strength Checker project: Implemented a basic Python script to assess password strength based on criteria.
-- Started Pong AI project: Implemented a basic rule-based AI opponent for the Pong game.
+- Completed Tic Tac Toe project: Implemented the classic game with a basic AI opponent and win/tie detection.
+- Completed Risk Game project: Implemented a simple CLI combat simulation with dice rolls and army losses.
+- Completed Chess project: Implemented a basic command-line Chess game with board representation, basic move validation, and turn management.
+- Completed Snake project: Implemented the classic Snake game with CLI graphics, food generation, collision detection, and score tracking.
+- Completed Tetris project: Implemented a basic command-line Tetris game with piece generation, movement, line clearing, and score tracking.
+- Completed Flappy Bird project: Implemented a basic command-line Flappy Bird game with gravity, pipes, collision detection, and score tracking.
+- Completed Memory Puzzle project: Implemented a basic command-line Memory Puzzle game with board generation, card revealing, match detection, and attempt tracking.

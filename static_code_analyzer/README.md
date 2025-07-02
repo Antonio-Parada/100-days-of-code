@@ -2,21 +2,19 @@
 
 ## Description
 
-This project involves making a software that will go through code (without executing it) and check for any inconsistencies or errors (syntax errors, indentation, etc.) that may cause problems during execution. This is a fundamental tool in software development.
+This project is a static code analyzer for Python. It parses Python code to identify syntax errors and unused function and class definitions, helping to improve code quality and maintainability.
 
-## Suggested Language & Tools
+## Features
 
-*   **Language:** Python (for parsing and analysis), or any language you feel comfortable with.
-*   **Tools:** Abstract Syntax Trees (AST) parsing libraries (e.g., `ast` module in Python), regular expressions, custom rule engines.
+- **AST-Based Parsing:** Uses Python's `ast` module for accurate and robust code analysis.
+- **Syntax Error Detection:** Automatically catches syntax errors during the parsing phase.
+- **Unused Code Detection:** Identifies top-level functions and classes that are defined but never used within the analyzed file.
 
-## Progress
+## How to Run
 
-*   [ ] Initial setup and project structure.
-*   [ ] Reading code from a file.
-*   [ ] Basic syntax checking (e.g., missing parentheses, unclosed quotes).
-*   [ ] Checking for simple style inconsistencies (e.g., indentation, naming conventions).
-*   [ ] Reporting identified issues with line numbers.
-*   [ ] (Bonus) More advanced semantic analysis.
-
-## Notes
+1.  Execute the script from your terminal:
+    ```bash
+    python static_analyzer.py
+    ```
+2.  The script will automatically create a test file (`test_code_ast.py`), analyze it, print the results, and then clean up the test file.
 

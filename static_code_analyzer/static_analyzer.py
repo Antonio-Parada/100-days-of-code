@@ -1,74 +1,116 @@
 import os
+import ast
 
-class SimpleStaticAnalyzer:
+class CodeVisitor(ast.NodeVisitor):
+    """
+    Traverses the AST to find all defined and used names.
+    """
+    def __init__(self):
+        self.defined_names = set()
+        self.used_names = set()
+
+    def visit_FunctionDef(self, node):
+        self.defined_names.add(node.name)
+        self.generic_visit(node)
+
+    def visit_ClassDef(self, node):
+        self.defined_names.add(node.name)
+        self.generic_visit(node)
+
+    def visit_Name(self, node):
+        # We are interested in names that are being loaded (read)
+        if isinstance(node.ctx, ast.Load):
+            self.used_names.add(node.id)
+        self.generic_visit(node)
+
+class AstStaticAnalyzer:
+    """
+    Analyzes Python files using the Abstract Syntax Tree (AST) module.
+    """
     def __init__(self):
         self.issues = []
 
     def analyze_python_file(self, filepath):
+        """
+        Analyzes a single Python file for syntax errors and unused definitions.
+        """
         if not os.path.exists(filepath):
             self.issues.append(f"Error: File '{filepath}' not found.")
+            self.print_issues()
             return
 
         print(f"\nAnalyzing file: {filepath}...")
         with open(filepath, 'r') as f:
-            lines = f.readlines()
+            source_code = f.read()
 
-        for i, line in enumerate(lines):
-            line_num = i + 1
-            stripped_line = line.strip()
+        try:
+            tree = ast.parse(source_code, filename=filepath)
+        except SyntaxError as e:
+            self.issues.append(f"SyntaxError in {filepath} at line {e.lineno}, col {e.offset}: {e.msg}")
+            self.print_issues()
+            return
 
-            # Check for missing colon in if/for/while/def/class statements
-            if stripped_line.startswith(("if ", "for ", "while ", "def ", "class ")):
-                if not stripped_line.endswith(":"):
-                    self.issues.append(f"Line {line_num}: Missing colon at end of statement: '{stripped_line}'")
+        visitor = CodeVisitor()
+        visitor.visit(tree)
 
-            # Check for inconsistent indentation (very basic, assumes 4 spaces)
-            if line.startswith(" ") and not line.startswith("    ") and not stripped_line == "":
-                if not line.startswith("\t"):
-                    self.issues.append(f"Line {line_num}: Inconsistent indentation (expected 4 spaces or tab): '{line.rstrip()}'")
+        # Find unused top-level functions and classes.
+        # This is a simplified check and may not be perfectly accurate in all scenarios
+        # (e.g., dynamic usage, decorators, use in other files).
+        unused_definitions = visitor.defined_names - visitor.used_names
+        for name in sorted(list(unused_definitions)): # sorted for consistent output
+            # Find the line number for the unused definition
+            for node in ast.walk(tree):
+                if isinstance(node, (ast.FunctionDef, ast.ClassDef)) and node.name == name:
+                    self.issues.append(f"Line {node.lineno}: Unused definition: '{name}'")
+                    break
+        
+        self.print_issues()
 
+    def print_issues(self):
         if self.issues:
             print("\n--- Analysis Results: Issues Found ---")
             for issue in self.issues:
                 print(issue)
             print("-------------------------------------")
-            self.issues = [] # Clear issues for next analysis
         else:
             print("No issues found.")
+        self.issues = [] # Clear for the next analysis
 
 if __name__ == "__main__":
-    analyzer = SimpleStaticAnalyzer()
-    print("--- Simple CLI Static Code Analyzer (Conceptual) ---")
-    print("This script performs basic checks on Python files.")
-    print("Commands: analyze <filepath>, exit")
+    analyzer = AstStaticAnalyzer()
+    print("--- AST-based Static Code Analyzer ---")
+    print("This script uses AST to find syntax errors and unused definitions.")
 
-    # Create a dummy Python file for testing
-    dummy_code = """
-def my_function(arg):
-    if arg > 0
+    # Create a dummy Python file with various issues for testing
+    dummy_code = '''
+import os
+
+class UnusedClass:
+    def __init__(self):
+        pass
+
+def used_function():
+    print("This function is used.")
+
+def unused_function(arg):
+    if arg > 0: # Missing colon here
         print("Positive")
-    else:
-        print("Negative")
 
-class MyClass:
-  def __init__(self):
-    pass
-"""
-    with open("test_code.py", "w") as f:
+def main():
+    used_function()
+
+# Note: 'main', 'UnusedClass', and 'unused_function' will be flagged as unused
+# because they are not called within the scope of this file analysis.
+'''
+    test_file = "test_code_ast.py"
+    with open(test_file, "w") as f:
         f.write(dummy_code)
-    print("Created test_code.py for testing.")
+    print(f"Created {test_file} for testing.")
 
-    while True:
-        command_input = input("> ").split(maxsplit=1)
-        cmd = command_input[0].lower()
+    # Analyze the dummy file directly
+    analyzer.analyze_python_file(test_file)
 
-        if cmd == "analyze":
-            if len(command_input) == 2:
-                analyzer.analyze_python_file(command_input[1])
-            else:
-                print("Usage: analyze <filepath>")
-        elif cmd == "exit":
-            print("Exiting Static Analyzer.")
-            break
-        else:
-            print("Unknown command.")
+    # Clean up the created test file
+    if os.path.exists(test_file):
+        os.remove(test_file)
+        print(f"Cleaned up {test_file}.")
