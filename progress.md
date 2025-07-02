@@ -5,3 +5,5 @@
 - Completed Tetris project: Implemented a basic command-line Tetris game with piece generation, movement, line clearing, and score tracking.
 - Completed Flappy Bird project: Implemented a basic command-line Flappy Bird game with gravity, pipes, collision detection, and score tracking.
 - Completed Memory Puzzle project: Implemented a basic command-line Memory Puzzle game with board generation, card revealing, match detection, and attempt tracking.
+- Completed Physics Engine project: Implemented a basic 2D physics engine with particle representation, gravity, wall collisions, and CLI visualization.
+- Completed Tic Tac Toe AI project: Implemented an unbeatable AI for Tic Tac Toe using the Minimax algorithm.
