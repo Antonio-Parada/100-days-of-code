@@ -81,24 +81,24 @@ class FlappyBirdGame:
     def flap(self):
         self.bird_velocity = self.flap_strength
 
-    def play_game_with_ai(self):
-        print("Welcome to Flappy Bird AI!")
-        time.sleep(1)
+    def play_game(self):
+        print("Welcome to Flappy Bird!")
+        print("Press any key to flap. Ctrl+C to quit.")
+        time.sleep(2)
 
         while not self.game_over:
             self._update_bird()
             self._update_pipes()
             self._check_collision()
-
-            # Simple AI logic: flap if bird is too low
-            if self.bird_y > self.height // 2 - 2: # Adjust this threshold as needed
-                self.flap()
-
             self._draw_board()
+
+            # In a real game, you'd get input here
+            # For this CLI version, we'll just let it fall
+
             time.sleep(0.1) # Game speed
 
-        print("Game Over! Final Score: ", self.score)
+        print("Game Over! Your score: ", self.score)
 
 if __name__ == '__main__':
     game = FlappyBirdGame()
-    game.play_game_with_ai()
+    game.play_game()

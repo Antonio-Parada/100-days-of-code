@@ -1,9 +1,2 @@
-- Completed Tic Tac Toe project: Implemented the classic game with a basic AI opponent and win/tie detection.
-- Completed Risk Game project: Implemented a simple CLI combat simulation with dice rolls and army losses.
-- Completed Chess project: Implemented a basic command-line Chess game with board representation, basic move validation, and turn management.
-- Completed Snake project: Implemented the classic Snake game with CLI graphics, food generation, collision detection, and score tracking.
-- Completed Tetris project: Implemented a basic command-line Tetris game with piece generation, movement, line clearing, and score tracking.
-- Completed Flappy Bird project: Implemented a basic command-line Flappy Bird game with gravity, pipes, collision detection, and score tracking.
-- Completed Memory Puzzle project: Implemented a basic command-line Memory Puzzle game with board generation, card revealing, match detection, and attempt tracking.
-- Completed Physics Engine project: Implemented a basic 2D physics engine with particle representation, gravity, wall collisions, and CLI visualization.
-- Completed Tic Tac Toe AI project: Implemented an unbeatable AI for Tic Tac Toe using the Minimax algorithm.
+
+- Completed Recipe Generator project: Implemented a basic command-line recipe generator with random cuisine, ingredients, cooking methods, and spices.
