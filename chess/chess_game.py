@@ -158,8 +158,45 @@ class Queen(Piece):
         super().__init__(color, position)
         self.symbol = "bQ" if color == "black" else "wQ"
 
-    def is_valid_move(self, new_position):
-        return True
+    def is_valid_move(self, board, new_position):
+        current_row, current_col = self.position
+        new_row, new_col = new_position
+
+        row_diff = new_row - current_row
+        col_diff = new_col - current_col
+
+        # Check for Rook-like moves (horizontal or vertical)
+        if current_row == new_row:  # Horizontal move
+            step = 1 if new_col > current_col else -1
+            for col in range(current_col + step, new_col, step):
+                if board[current_row][col] is not None:
+                    return False  # Path is blocked
+            target_piece = board[new_row][new_col]
+            return target_piece is None or target_piece.color != self.color
+        elif current_col == new_col:  # Vertical move
+            step = 1 if new_row > current_row else -1
+            for row in range(current_row + step, new_row, step):
+                if board[row][current_col] is not None:
+                    return False  # Path is blocked
+            target_piece = board[new_row][new_col]
+            return target_piece is None or target_piece.color != self.color
+
+        # Check for Bishop-like moves (diagonal)
+        elif abs(row_diff) == abs(col_diff):
+            row_step = 1 if row_diff > 0 else -1
+            col_step = 1 if col_diff > 0 else -1
+
+            r, c = current_row + row_step, current_col + col_step
+            while r != new_row and c != new_col:
+                if board[r][c] is not None:
+                    return False  # Path is blocked
+                r += row_step
+                c += col_step
+
+            target_piece = board[new_row][new_col]
+            return target_piece is None or target_piece.color != self.color
+
+        return False
 
 class King(Piece):
     def __init__(self, color, position):
