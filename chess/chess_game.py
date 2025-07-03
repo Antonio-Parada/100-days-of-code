@@ -84,8 +84,26 @@ class Rook(Piece):
         super().__init__(color, position)
         self.symbol = "bR" if color == "black" else "wR"
 
-    def is_valid_move(self, new_position):
-        return True
+    def is_valid_move(self, board, new_position):
+        current_row, current_col = self.position
+        new_row, new_col = new_position
+
+        # Rook moves horizontally or vertically
+        if current_row == new_row:  # Horizontal move
+            step = 1 if new_col > current_col else -1
+            for col in range(current_col + step, new_col, step):
+                if board[current_row][col] is not None:
+                    return False  # Path is blocked
+        elif current_col == new_col:  # Vertical move
+            step = 1 if new_row > current_row else -1
+            for row in range(current_row + step, new_row, step):
+                if board[row][current_col] is not None:
+                    return False  # Path is blocked
+        else:
+            return False  # Invalid move for Rook
+
+        target_piece = board[new_row][new_col]
+        return target_piece is None or target_piece.color != self.color
 
 class Knight(Piece):
     def __init__(self, color, position):
