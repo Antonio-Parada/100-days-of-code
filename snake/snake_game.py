@@ -92,6 +92,18 @@ class Game:
             # For now, it will run very fast.
             # input("Press Enter to continue...") # Uncomment for step-by-step
 
+from snake_ai.snake_ai import SnakeAI
+
 if __name__ == "__main__":
     game = Game()
-    game.run()
+    ai = SnakeAI(game)
+    while not game.game_over:
+        game.display()
+        next_move = ai.get_next_move()
+        if next_move:
+            game.snake.change_direction(next_move)
+            game.update()
+        else:
+            print("AI has no valid moves. Game Over.")
+            break
+    game.display() # Display final state
