@@ -110,8 +110,19 @@ class Knight(Piece):
         super().__init__(color, position)
         self.symbol = "bN" if color == "black" else "wN"
 
-    def is_valid_move(self, new_position):
-        return True
+    def is_valid_move(self, board, new_position):
+        current_row, current_col = self.position
+        new_row, new_col = new_position
+
+        row_diff = abs(new_row - current_row)
+        col_diff = abs(new_col - current_col)
+
+        # Knight moves in an L-shape: 2 squares in one direction (horizontal or vertical)
+        # and 1 square in the perpendicular direction.
+        if (row_diff == 2 and col_diff == 1) or (row_diff == 1 and col_diff == 2):
+            target_piece = board[new_row][new_col]
+            return target_piece is None or target_piece.color != self.color
+        return False
 
 class Bishop(Piece):
     def __init__(self, color, position):
