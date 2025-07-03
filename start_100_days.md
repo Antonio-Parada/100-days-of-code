@@ -545,15 +545,15 @@ Notes: Implemented basic Tetris game logic including tetromino movement, rotatio
 Description: Now that you have most likely built the chess game, build an AI that you can play against. For inspiration look into the examples provided. The challenge here is to make an AI that is fast enough to play against. Most simple AIs for chess are just really slow (take about a minute or more for a move). Make your chess engine interface with other programs such via the [Universal Chess Interface](https://en.wikipedia.org/wiki/Universal_Chess_Interface). Then you can test it out against other bots/players online.
 Suggested Language: Python, JavaScript
 Suggested Frameworks/Tools: Chessboard.js (JavaScript)
-Status: [ ] In Progress
-Notes: Started project, created directory and README.
+Status: [x] Completed
+Notes: Implemented a basic random move AI and integrated it into the Chess game loop.
 
 #### Snake AI
 Description: Build a simple snake AI that plays snake. For an added challenge, generate random maps and then train your AI to play in any random map that you generate.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [ ] In Progress
+Notes: Started project, created directory and README.
 
 #### Map Maker
 Description: Build a simple program that will generate random terrain maps through [procedural generation](https://en.wikipedia.org/wiki/Procedural_generation) with a user supplied seed.

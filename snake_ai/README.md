@@ -1,3 +1,3 @@
 # Snake AI
 
-This project aims to implement an AI for the Snake game.
+This project is an implementation of an AI that plays the Snake game.
