@@ -524,15 +524,15 @@ Notes: Implemented basic game structure, map initialization, player setup, initi
 Description: Code the game of chess from the ground up. Build a board, the pieces (you can use images for this part). Code in the rules and make sure you allow no invalid moves.
 Suggested Language: JavaScript, Python, any other language you want to master
 Suggested Frameworks/Tools:
-Status: [ ] In Progress
-Notes: Started project, created directory and README.
+Status: [x] Completed
+Notes: Implemented basic game structure, board initialization, piece classes, and move validation for all pieces.
 
 #### Snake
 Description: This is one of the simplest items on the list. For an additional challenge, try generating different maps to play in.
 Suggested Language: Any language that you feel comfortable with
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [ ] In Progress
+Notes: Started project, created directory and README.
 
 #### Tetris
 Description: Code the game of Tetris starting from the Tetrominoes to the game interface. A web app is better as it will let you play from anywhere. For additional challenge try to implement a simple HTML and JavaScript version without any additional frameworks or libraries to help.

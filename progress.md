@@ -1,4 +1,5 @@
-- Started Chess project: Created project directory and README.
+- Started Snake project: Created project directory and README.
+- Completed Chess project: Implemented basic game structure, board initialization, piece classes, and move validation for all pieces.
 - Completed Risk project: Implemented basic game structure, map initialization, player setup, initial territory distribution, and a basic game loop with reinforcement, simplified attack, fortification phases, and win condition check.
 - Started Folder Encrypter project: Created project directory and README.
 - Started Static Code Analyzer project: Created project directory and README.
