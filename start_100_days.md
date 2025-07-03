@@ -517,8 +517,8 @@ Notes: Implemented a basic rule-based AI opponent for the Pong game that tracks 
 Description: Try coding the classic board game of [Risk](https://en.wikipedia.org/wiki/Risk_(game)). Make sure you know all the rules and understand the game properly before you code it.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [ ] In Progress
+Notes: Started project, created directory and README.
 
 #### Chess
 Description: Code the game of chess from the ground up. Build a board, the pieces (you can use images for this part). Code in the rules and make sure you allow no invalid moves.
