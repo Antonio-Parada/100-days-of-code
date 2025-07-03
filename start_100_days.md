@@ -518,7 +518,7 @@ Description: Try coding the classic board game of [Risk](https://en.wikipedia.or
 Suggested Language:
 Suggested Frameworks/Tools:
 Status: [ ] In Progress
-Notes: Implemented basic game structure, map initialization, player setup, initial territory distribution, and a basic game loop with reinforcement phase.
+Notes: Implemented basic game structure, map initialization, player setup, initial territory distribution, and a basic game loop with reinforcement and simplified attack phases.
 
 #### Chess
 Description: Code the game of chess from the ground up. Build a board, the pieces (you can use images for this part). Code in the rules and make sure you allow no invalid moves.

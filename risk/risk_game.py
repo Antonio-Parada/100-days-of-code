@@ -196,8 +196,34 @@ class Game:
 
                 # Fortification Phase (Simplified)
                 print("\n--- Fortification Phase ---")
-                # For now, no fortification implemented.
-                print("No fortification implemented for this turn.")
+                # For now, let's assume a simple fortification scenario
+                # Player can move armies from one of their territories to an adjacent owned territory.
+                
+                # Find a territory to fortify from and to
+                from_territory = None
+                to_territory = None
+
+                for t_from in player.territories:
+                    if t_from.armies > 1: # Must have at least 2 armies to move 1
+                        for neighbor_name in t_from.neighbors:
+                            if neighbor_name in self.territories:
+                                t_to = self.territories[neighbor_name]
+                                if t_to.owner == player: # Must be owned by the same player
+                                    from_territory = t_from
+                                    to_territory = t_to
+                                    break
+                        if from_territory:
+                            break
+                
+                if from_territory and to_territory:
+                    print(f"{player.name} fortifies from {from_territory.name} to {to_territory.name}")
+                    from_territory.armies -= 1
+                    to_territory.armies += 1
+                    print(f"Moved 1 army from {from_territory.name} to {to_territory.name}.")
+                else:
+                    print("No valid fortification possible for this player in this turn (simplified).")
+
+                self.display_game_state()
 
             turn += 1
             if turn > 3: # Limit turns for demonstration
