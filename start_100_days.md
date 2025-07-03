@@ -587,8 +587,8 @@ Notes: Started project, created directory and README.
 Description: Implement a classic memory puzzle where the user has to click on two similar cards to eliminate them. Shuffle the cards randomly in the beginning and give the user a fixed number of chances or a fixed time to clear the board.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [ ] In Progress
+Notes: Started project, created directory and README.
 
 #### Physics Engine
 Description: Video Games work on [physics engines](https://en.wikipedia.org/wiki/Physics_engine). Build your own. You can later use this engine to build games or carry out simulations. Try building a 2D or 3D physics engine that can handle collision, movement, acceleration, gravity, and other forces in the system. You may need to first understand a bit of physics to be able to build something, so take your time for this one.

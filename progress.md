@@ -1,6 +1,7 @@
 - Completed Snake project: Implemented basic Snake game logic including snake movement, food generation, collision detection, and game display.
 - Completed Chess AI project: Implemented a basic random move AI and integrated it into the Chess game loop.
 - Started Tic Tac Toe project: Created project directory and README.
+- Started Memory Puzzle project: Created project directory and README.
 - Completed Flappy Bird project: Implemented basic Flappy Bird game logic including bird movement, pipe generation, collision detection, and scoring.
 - Completed Battleship project: Implemented basic Battleship game logic including board, ships, placement, shooting, and win conditions.
 - Completed Map Maker project: Implemented Perlin noise-based map generation.
