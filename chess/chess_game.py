@@ -47,7 +47,7 @@ class Piece:
         self.position = position
         self.symbol = ""
 
-    def is_valid_move(self, new_position):
+    def is_valid_move(self, board, new_position):
         raise NotImplementedError
 
 class Pawn(Piece):
@@ -55,9 +55,29 @@ class Pawn(Piece):
         super().__init__(color, position)
         self.symbol = "bP" if color == "black" else "wP"
 
-    def is_valid_move(self, new_position):
-        # Simplified pawn move logic for now
-        return True
+    def is_valid_move(self, board, new_position):
+        current_row, current_col = self.position
+        new_row, new_col = new_position
+
+        # Determine direction based on color
+        direction = 1 if self.color == "black" else -1
+
+        # Single square move forward
+        if new_col == current_col and new_row == current_row + direction:
+            return board[new_row][new_col] is None
+
+        # Two square initial move forward
+        if (self.color == "black" and current_row == 1 and new_row == current_row + 2 * direction) or \
+           (self.color == "white" and current_row == 6 and new_row == current_row + 2 * direction):
+            if new_col == current_col and board[new_row][new_col] is None and board[current_row + direction][current_col] is None:
+                return True
+
+        # Diagonal capture
+        if abs(new_col - current_col) == 1 and new_row == current_row + direction:
+            target_piece = board[new_row][new_col]
+            return target_piece is not None and target_piece.color != self.color
+
+        return False
 
 class Rook(Piece):
     def __init__(self, color, position):
@@ -107,7 +127,7 @@ class ChessGame:
     def make_move(self, start_pos, end_pos):
         # Simplified move logic for now
         piece = self.board.board[start_pos[0]][start_pos[1]]
-        if piece and piece.color == self.current_player and piece.is_valid_move(end_pos):
+        if piece and piece.color == self.current_player and piece.is_valid_move(self.board.board, end_pos):
             self.board.board[end_pos[0]][end_pos[1]] = piece
             self.board.board[start_pos[0]][start_pos[1]] = None
             piece.position = end_pos
