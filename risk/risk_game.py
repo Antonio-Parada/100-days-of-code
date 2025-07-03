@@ -148,6 +148,57 @@ class Game:
                 # Placeholder for attack and fortification phases
                 # input("Press Enter to continue to next phase...")
 
+                # Attack Phase (Simplified)
+                print("\n--- Attack Phase ---")
+                # For demonstration, let's assume a simple attack scenario
+                # In a real game, players would choose attacking and defending territories
+                # and roll dice.
+                # For now, let's just simulate a single attack if possible.
+                
+                # Find an attacking territory and a neighboring enemy territory
+                attacking_territory = None
+                defending_territory = None
+                
+                for t in player.territories:
+                    for neighbor_name in t.neighbors:
+                        if neighbor_name in self.territories:
+                            neighbor_territory = self.territories[neighbor_name]
+                            if neighbor_territory.owner != player:
+                                attacking_territory = t
+                                defending_territory = neighbor_territory
+                                break
+                    if attacking_territory:
+                        break
+
+                if attacking_territory and defending_territory:
+                    print(f"{player.name} ({attacking_territory.name}) attacks {defending_territory.owner.name} ({defending_territory.name})")
+                    # Simple attack logic: attacker wins if they have more armies
+                    if attacking_territory.armies > defending_territory.armies:
+                        print(f"{player.name} wins the attack!")
+                        # Move armies to conquered territory (simplified)
+                        attacking_territory.armies -= 1 # Leave one army behind
+                        defending_territory.owner.territories.remove(defending_territory)
+                        defending_territory.owner.armies -= defending_territory.armies
+                        
+                        defending_territory.owner = player
+                        player.territories.append(defending_territory)
+                        player.armies += defending_territory.armies
+                        defending_territory.armies = 1 # Occupy with 1 army
+                        attacking_territory.armies -= 1 # Move one army from attacking to defending
+                        print(f"{player.name} now owns {defending_territory.name}.")
+                    else:
+                        print(f"{defending_territory.owner.name} defends successfully!")
+                        attacking_territory.armies -= 1 # Attacker loses one army
+                else:
+                    print("No valid attack possible for this player in this turn (simplified).")
+
+                self.display_game_state()
+
+                # Fortification Phase (Simplified)
+                print("\n--- Fortification Phase ---")
+                # For now, no fortification implemented.
+                print("No fortification implemented for this turn.")
+
             turn += 1
             if turn > 3: # Limit turns for demonstration
                 break
