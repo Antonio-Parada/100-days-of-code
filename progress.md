@@ -1,4 +1,5 @@
-- Started Snake project: Created project directory and README.
+- Completed Snake project: Implemented basic Snake game logic including snake movement, food generation, collision detection, and game display.
+- Started Tetris project: Created project directory and README.
 - Completed Chess project: Implemented basic game structure, board initialization, piece classes, and move validation for all pieces.
 - Completed Risk project: Implemented basic game structure, map initialization, player setup, initial territory distribution, and a basic game loop with reinforcement, simplified attack, fortification phases, and win condition check.
 - Started Folder Encrypter project: Created project directory and README.

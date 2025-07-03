@@ -531,15 +531,15 @@ Notes: Implemented basic game structure, board initialization, piece classes, an
 Description: This is one of the simplest items on the list. For an additional challenge, try generating different maps to play in.
 Suggested Language: Any language that you feel comfortable with
 Suggested Frameworks/Tools:
-Status: [ ] In Progress
-Notes: Started project, created directory and README.
+Status: [x] Completed
+Notes: Implemented basic Snake game logic including snake movement, food generation, collision detection, and game display.
 
 #### Tetris
 Description: Code the game of Tetris starting from the Tetrominoes to the game interface. A web app is better as it will let you play from anywhere. For additional challenge try to implement a simple HTML and JavaScript version without any additional frameworks or libraries to help.
 Suggested Language: JavaScript, HTML
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [ ] In Progress
+Notes: Started project, created directory and README.
 
 #### Chess AI
 Description: Now that you have most likely built the chess game, build an AI that you can play against. For inspiration look into the examples provided. The challenge here is to make an AI that is fast enough to play against. Most simple AIs for chess are just really slow (take about a minute or more for a move). Make your chess engine interface with other programs such via the [Universal Chess Interface](https://en.wikipedia.org/wiki/Universal_Chess_Interface). Then you can test it out against other bots/players online.
