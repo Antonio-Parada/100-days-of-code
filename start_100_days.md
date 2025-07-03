@@ -552,15 +552,15 @@ Notes: Implemented a basic random move AI and integrated it into the Chess game 
 Description: Build a simple snake AI that plays snake. For an added challenge, generate random maps and then train your AI to play in any random map that you generate.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] In Progress
-Notes: Started project, created directory and README.
+Status: [x] Completed
+Notes: Implemented a basic random move AI and integrated it into the Snake game loop.
 
 #### Map Maker
 Description: Build a simple program that will generate random terrain maps through [procedural generation](https://en.wikipedia.org/wiki/Procedural_generation) with a user supplied seed.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [ ] In Progress
+Notes: Started project, created directory and README.
 
 #### Battleship
 Description: Build the classic game of battleship. You can build a CLI app or a much better app with graphics using any 2D graphics module.
