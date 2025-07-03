@@ -216,10 +216,13 @@ class King(Piece):
             return target_piece is None or target_piece.color != self.color
         return False
 
+from chess_ai.chess_ai import ChessAI
+
 class ChessGame:
     def __init__(self):
         self.board = ChessBoard()
         self.current_player = "white"
+        self.ai = ChessAI(self)
 
     def make_move(self, start_pos, end_pos):
         # Simplified move logic for now
@@ -240,9 +243,34 @@ class ChessGame:
         while True:
             self.board.display_board()
             print(f"\n{self.current_player}'s turn.")
-            # Placeholder for player input and move validation
-            # For now, just break after a few turns for demonstration
-            break
+            if self.current_player == "white":
+                # Placeholder for human player input
+                print("Enter your move (e.g., 'e2 e4'):")
+                move_str = input()
+                try:
+                    start_col = ord(move_str[0]) - ord('a')
+                    start_row = 8 - int(move_str[1])
+                    end_col = ord(move_str[3]) - ord('a')
+                    end_row = 8 - int(move_str[4])
+                    start_pos = (start_row, start_col)
+                    end_pos = (end_row, end_col)
+                    if not self.make_move(start_pos, end_pos):
+                        print("Invalid move. Try again.")
+                except (ValueError, IndexError):
+                    print("Invalid input format. Please use 'e.g., e2 e4'.")
+            else:
+                print("AI is thinking...")
+                ai_move = self.ai.get_random_move()
+                if ai_move:
+                    start_pos, end_pos = ai_move
+                    self.make_move(start_pos, end_pos)
+                    print(f"AI moves from {chr(ord('a') + start_pos[1])}{8 - start_pos[0]} to {chr(ord('a') + end_pos[1])}{8 - end_pos[0]}")
+                else:
+                    print("AI has no valid moves. Game over.")
+                    self.game_over = True
+            
+            if self.game_over:
+                break
 
 if __name__ == "__main__":
     game = ChessGame()
