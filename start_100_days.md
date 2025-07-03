@@ -517,15 +517,15 @@ Notes: Implemented a basic rule-based AI opponent for the Pong game that tracks 
 Description: Try coding the classic board game of [Risk](https://en.wikipedia.org/wiki/Risk_(game)). Make sure you know all the rules and understand the game properly before you code it.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] In Progress
-Notes: Implemented basic game structure, map initialization, player setup, initial territory distribution, and a basic game loop with reinforcement, simplified attack, and fortification phases.
+Status: [x] Completed
+Notes: Implemented basic game structure, map initialization, player setup, initial territory distribution, and a basic game loop with reinforcement, simplified attack, fortification phases, and win condition check.
 
 #### Chess
 Description: Code the game of chess from the ground up. Build a board, the pieces (you can use images for this part). Code in the rules and make sure you allow no invalid moves.
 Suggested Language: JavaScript, Python, any other language you want to master
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [ ] In Progress
+Notes: Started project, created directory and README.
 
 #### Snake
 Description: This is one of the simplest items on the list. For an additional challenge, try generating different maps to play in.

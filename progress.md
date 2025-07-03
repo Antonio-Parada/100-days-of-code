@@ -1,4 +1,5 @@
-- Started Risk project: Created project directory and README.
+- Started Chess project: Created project directory and README.
+- Completed Risk project: Implemented basic game structure, map initialization, player setup, initial territory distribution, and a basic game loop with reinforcement, simplified attack, fortification phases, and win condition check.
 - Started Folder Encrypter project: Created project directory and README.
 - Started Static Code Analyzer project: Created project directory and README.
 - Completed Kaggle Titanic Challenge project: Implemented a basic Titanic survival predictor using a simplified logistic regression model.
