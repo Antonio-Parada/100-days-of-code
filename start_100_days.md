@@ -429,8 +429,8 @@ Notes: Implemented a web-based visualization of Bubble Sort using HTML Canvas, s
 Description: Make a software that will go through your code (without executing it) and check for any inconsistencies or errors (syntax errors, indentation, etc) that may cause any problems during execution.
 Suggested Language: Any language you feel comfortable with
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [ ] In Progress
+Notes: Started project, created directory and README.
 
 #### Command Line Terminal
 Description: If you are building the Operating System, you will surely need a Command Line Terminal. Try to clone the bash shell or Windows PowerShell as an independent project to make it easier while you build your own OS.
