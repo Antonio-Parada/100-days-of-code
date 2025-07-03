@@ -1,6 +1,7 @@
 - Completed Snake project: Implemented basic Snake game logic including snake movement, food generation, collision detection, and game display.
 - Completed Chess AI project: Implemented a basic random move AI and integrated it into the Chess game loop.
-- Started Map Maker project: Created project directory and README.
+- Started Battleship project: Created project directory and README.
+- Completed Map Maker project: Implemented Perlin noise-based map generation.
 - Completed Snake AI project: Implemented a basic random move AI and integrated it into the Snake game loop.
 - Completed Tetris project: Implemented basic Tetris game logic including tetromino movement, rotation, collision detection, line clearing, and scoring.
 - Completed Chess project: Implemented basic game structure, board initialization, piece classes, and move validation for all pieces.

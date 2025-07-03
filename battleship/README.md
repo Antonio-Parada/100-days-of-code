@@ -1,3 +1,3 @@
 # Battleship Game
 
-This project implements the classic Battleship game.
+This project is an implementation of the classic Battleship game.

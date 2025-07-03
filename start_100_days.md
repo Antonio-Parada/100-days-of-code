@@ -559,15 +559,15 @@ Notes: Implemented a basic random move AI and integrated it into the Snake game 
 Description: Build a simple program that will generate random terrain maps through [procedural generation](https://en.wikipedia.org/wiki/Procedural_generation) with a user supplied seed.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] In Progress
-Notes: Started project, created directory and README.
+Status: [x] Completed
+Notes: Implemented Perlin noise-based map generation.
 
 #### Battleship
 Description: Build the classic game of battleship. You can build a CLI app or a much better app with graphics using any 2D graphics module.
 Suggested Language: Python (or any language you want to learn)
 Suggested Frameworks/Tools: Pygame (Python)
-Status: [ ] To Do
-Notes:
+Status: [ ] In Progress
+Notes: Started project, created directory and README.
 
 #### Flappy Bird
 Description: This is one of the simplest difficult games that you can build. You can use images for pipes and the bird or generate your own custom bird and pipes for the project.
