@@ -225,7 +225,20 @@ class Game:
 
                 self.display_game_state()
 
+                # Check for win condition
+                winner = self.check_win_condition()
+                if winner:
+                    print(f"
+!!! {winner.name} has conquered all territories and won the game !!!")
+                    break
+
             turn += 1
             if turn > 3: # Limit turns for demonstration
                 break
         print("Game Over (Demo End).")
+
+    def check_win_condition(self):
+        for player in self.players:
+            if len(player.territories) == len(self.territories):
+                return player
+        return None
