@@ -573,15 +573,15 @@ Notes: Implemented basic Battleship game logic including board, ships, placement
 Description: This is one of the simplest difficult games that you can build. You can use images for pipes and the bird or generate your own custom bird and pipes for the project.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] In Progress
-Notes: Started project, created directory and README.
+Status: [x] Completed
+Notes: Implemented basic Flappy Bird game logic including bird movement, pipe generation, collision detection, and scoring.
 
 #### Tic Tac Toe
 Description: Build a CLI app for tic-tac-toe or a graphical interface. One of the interesting ideas is to let the user draw Xs and Os and then let the machine automatically identify if you drew an X or an O.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [ ] In Progress
+Notes: Started project, created directory and README.
 
 #### Memory Puzzle
 Description: Implement a classic memory puzzle where the user has to click on two similar cards to eliminate them. Shuffle the cards randomly in the beginning and give the user a fixed number of chances or a fixed time to clear the board.
