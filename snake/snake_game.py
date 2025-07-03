@@ -1,82 +1,97 @@
 import random
-import time
-import os
 
-class SnakeGame:
-    def __init__(self, width=20, height=10):
+class Snake:
+    def __init__(self):
+        self.body = [(10, 10), (10, 9), (10, 8)]  # Initial snake body
+        self.direction = "RIGHT"  # Initial direction
+
+    def move(self):
+        head_x, head_y = self.body[0]
+        if self.direction == "UP":
+            new_head = (head_x - 1, head_y)
+        elif self.direction == "DOWN":
+            new_head = (head_x + 1, head_y)
+        elif self.direction == "LEFT":
+            new_head = (head_x, head_y - 1)
+        elif self.direction == "RIGHT":
+            new_head = (head_x, head_y + 1)
+        self.body.insert(0, new_head)
+        self.body.pop()  # Remove tail
+
+    def change_direction(self, new_direction):
+        if new_direction == "UP" and self.direction != "DOWN":
+            self.direction = new_direction
+        elif new_direction == "DOWN" and self.direction != "UP":
+            self.direction = new_direction
+        elif new_direction == "LEFT" and self.direction != "RIGHT":
+            self.direction = new_direction
+        elif new_direction == "RIGHT" and self.direction != "LEFT":
+            self.direction = new_direction
+
+class Food:
+    def __init__(self, game_width, game_height):
+        self.position = self._generate_position(game_width, game_height)
+
+    def _generate_position(self, game_width, game_height):
+        return (random.randint(0, game_width - 1), random.randint(0, game_height - 1))
+
+class Game:
+    def __init__(self, width=20, height=20):
         self.width = width
         self.height = height
-        self.snake = [(width // 2, height // 2)]
-        self.food = self._generate_food()
-        self.direction = 'RIGHT'
+        self.snake = Snake()
+        self.food = Food(self.width, self.height)
         self.score = 0
         self.game_over = False
 
-    def _generate_food(self):
-        while True:
-            food_pos = (random.randint(0, self.width - 1), random.randint(0, self.height - 1))
-            if food_pos not in self.snake:
-                return food_pos
-
-    def _clear_screen(self):
-        os.system('cls' if os.name == 'nt' else 'clear')
-
-    def _draw_board(self):
-        self._clear_screen()
-        print("Score: ", self.score)
-        for y in range(self.height):
-            for x in range(self.width):
-                if (x, y) == self.food:
-                    print('F', end=' ')
-                elif (x, y) in self.snake:
-                    print('S', end=' ')
-                else:
-                    print('.', end=' ')
-            print()
-
-    def _move_snake(self):
-        head_x, head_y = self.snake[0]
-        if self.direction == 'UP':
-            new_head = (head_x, head_y - 1)
-        elif self.direction == 'DOWN':
-            new_head = (head_x, head_y + 1)
-        elif self.direction == 'LEFT':
-            new_head = (head_x - 1, head_y)
-        elif self.direction == 'RIGHT':
-            new_head = (head_x + 1, head_y)
-
-        self.snake.insert(0, new_head)
-
-        # Check for collisions
-        if (new_head[0] < 0 or new_head[0] >= self.width or
-            new_head[1] < 0 or new_head[1] >= self.height or
-            new_head in self.snake[1:]):
-            self.game_over = True
+    def update(self):
+        if self.game_over:
             return
 
-        # Check for food
-        if new_head == self.food:
+        self.snake.move()
+
+        # Check for collision with food
+        if self.snake.body[0] == self.food.position:
             self.score += 1
-            self.food = self._generate_food()
-        else:
-            self.snake.pop()
+            self.snake.body.append(self.snake.body[-1])  # Grow snake
+            self.food.position = self.food._generate_position(self.width, self.height)
 
-    def play_interactive(self):
-        print("Welcome to Snake Game!")
-        print("Use W, A, S, D to move. Press Q to quit.")
-        time.sleep(2)
+        # Check for collision with walls
+        head_x, head_y = self.snake.body[0]
+        if not (0 <= head_x < self.width and 0 <= head_y < self.height):
+            self.game_over = True
 
+        # Check for collision with self
+        if self.snake.body[0] in self.snake.body[1:]:
+            self.game_over = True
+
+    def display(self):
+        # Create an empty grid
+        grid = [['.' for _ in range(self.width)] for _ in range(self.height)]
+
+        # Place snake on grid
+        for segment_x, segment_y in self.snake.body:
+            grid[segment_x][segment_y] = 'S'
+
+        # Place food on grid
+        food_x, food_y = self.food.position
+        grid[food_x][food_y] = 'F'
+
+        # Print the grid
+        for row in grid:
+            print(' '.join(row))
+        print(f"Score: {self.score}")
+        if self.game_over:
+            print("GAME OVER!")
+
+    def run(self):
         while not self.game_over:
-            self._draw_board()
-            self._move_snake()
-            time.sleep(0.2) # Adjust speed
+            self.display()
+            self.update()
+            # In a real game, you'd have a delay here and handle user input
+            # For now, it will run very fast.
+            # input("Press Enter to continue...") # Uncomment for step-by-step
 
-            # In a real interactive game, you'd get input here
-            # For this CLI version, we'll just keep moving in the current direction
-            # until a collision or food is found.
-
-        print("Game Over! Your score: ", self.score)
-
-if __name__ == '__main__':
-    game = SnakeGame()
-    game.play_interactive()
+if __name__ == "__main__":
+    game = Game()
+    game.run()
