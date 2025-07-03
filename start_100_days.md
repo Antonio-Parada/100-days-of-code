@@ -487,8 +487,8 @@ Notes: Implemented a basic command-line password manager with functionalities to
 Description: Build a piece of software that can encrypt and lock a selected folder. The contents of the folder should not be accessible/copied/moved without the correct password.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [ ] In Progress
+Notes: Started project, created directory and README.
 
 #### Password Strength Checker
 Description: Build a website/app that will check how strong a given password is. To make it more fancy, incorporate a good metric of how strong a password is (check out the example).

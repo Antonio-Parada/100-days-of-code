@@ -1,2 +1,3 @@
+- Started Folder Encrypter project: Created project directory and README.
 - Started Static Code Analyzer project: Created project directory and README.
 - Completed Kaggle Titanic Challenge project: Implemented a basic Titanic survival predictor using a simplified logistic regression model.
