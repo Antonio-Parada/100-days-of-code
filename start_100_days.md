@@ -564,17 +564,17 @@ Notes: Implemented Perlin noise-based map generation.
 
 #### Battleship
 Description: Build the classic game of battleship. You can build a CLI app or a much better app with graphics using any 2D graphics module.
-Suggested Language: Python (or any language you want to learn)
+Suggested Language: Python (or any other language you want to learn)
 Suggested Frameworks/Tools: Pygame (Python)
-Status: [ ] In Progress
-Notes: Started project, created directory and README.
+Status: [x] Completed
+Notes: Implemented basic Battleship game logic including board, ships, placement, shooting, and win conditions.
 
 #### Flappy Bird
 Description: This is one of the simplest difficult games that you can build. You can use images for pipes and the bird or generate your own custom bird and pipes for the project.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [ ] In Progress
+Notes: Started project, created directory and README.
 
 #### Tic Tac Toe
 Description: Build a CLI app for tic-tac-toe or a graphical interface. One of the interesting ideas is to let the user draw Xs and Os and then let the machine automatically identify if you drew an X or an O.
