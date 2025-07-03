@@ -79,6 +79,16 @@ class Game:
         e_united_states.neighbors = [w_united_states, ontario, quebec, central_america]
         central_america.neighbors = [w_united_states, e_united_states, "Venezuela"]
 
+    def calculate_reinforcements(self, player):
+        # Base reinforcements from territories
+        reinforcements = max(3, len(player.territories) // 3)
+
+        # Continent bonuses
+        for continent_name, continent_data in self.continents.items():
+            if all(self.territories[t].owner == player for t in continent_data["territories"]):
+                reinforcements += continent_data["bonus_armies"]
+        return reinforcements
+
     def setup_game(self):
         self._initialize_map()
 
@@ -107,6 +117,38 @@ class Game:
         for player in self.players:
             player.armies = initial_armies_per_player - len(player.territories) + player.armies # Adjust for initial territory armies
 
+    def display_game_state(self):
+        print("\n--- Current Game State ---")
+        for player in self.players:
+            print(f"\nPlayer: {player.name} ({player.color}) - Armies: {player.armies}")
+            for territory in player.territories:
+                print(f"  - {territory.name} ({territory.armies} armies)")
+
     def start_game(self):
-        # This will contain the main game loop
-        pass
+        print("Game Started!")
+        self.setup_game()
+        self.display_game_state()
+
+        # Simple game loop for demonstration
+        turn = 1
+        while True:
+            print(f"\n--- Turn {turn} ---")
+            for player in self.players:
+                print(f"\n{player.name}'s turn.")
+                reinforcements = self.calculate_reinforcements(player)
+                player.armies += reinforcements
+                print(f"{player.name} receives {reinforcements} reinforcements. Total armies: {player.armies}")
+                # For now, just place all reinforcements on a random territory
+                if player.territories:
+                    random_territory = random.choice(player.territories)
+                    random_territory.armies += reinforcements
+                    print(f"Placed {reinforcements} armies on {random_territory.name}.")
+                self.display_game_state()
+
+                # Placeholder for attack and fortification phases
+                # input("Press Enter to continue to next phase...")
+
+            turn += 1
+            if turn > 3: # Limit turns for demonstration
+                break
+        print("Game Over (Demo End).")
