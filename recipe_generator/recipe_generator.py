@@ -2,48 +2,46 @@ import random
 
 class RecipeGenerator:
     def __init__(self):
-        self.cuisines = ["Italian", "Mexican", "Indian", "Chinese", "American"]
-        self.main_ingredients = ["Chicken", "Beef", "Fish", "Tofu", "Lentils", "Vegetables"]
-        self.cooking_methods = ["Grilled", "Baked", "Fried", "Stewed", "Roasted", "Sauteed"]
-        self.spices = ["Salt", "Pepper", "Cumin", "Paprika", "Garlic Powder", "Oregano"]
-        self.sides = ["Rice", "Noodles", "Potatoes", "Salad", "Bread"]
-
-    def generate_recipe(self):
-        cuisine = random.choice(self.cuisines)
-        main_ingredient = random.choice(self.main_ingredients)
-        cooking_method = random.choice(self.cooking_methods)
-        
-        num_spices = random.randint(1, 3)
-        selected_spices = random.sample(self.spices, num_spices)
-        
-        num_sides = random.randint(0, 2)
-        selected_sides = random.sample(self.sides, num_sides)
-
-        recipe = {
-            "Cuisine": cuisine,
-            "Main Ingredient": main_ingredient,
-            "Cooking Method": cooking_method,
-            "Spices": ", ".join(selected_spices) if selected_spices else "None",
-            "Sides": ", ".join(selected_sides) if selected_sides else "None"
+        self.recipes = {
+            "italian": [
+                {"name": "Pasta Carbonara", "ingredients": ["pasta", "eggs", "bacon", "parmesan"]},
+                {"name": "Margherita Pizza", "ingredients": ["pizza dough", "tomato sauce", "mozzarella", "basil"]},
+            ],
+            "mexican": [
+                {"name": "Tacos", "ingredients": ["tortillas", "ground beef", "lettuce", "cheese", "salsa"]},
+                {"name": "Guacamole", "ingredients": ["avocado", "onion", "cilantro", "lime", "jalapeno"]},
+            ],
+            "indian": [
+                {"name": "Chicken Tikka Masala", "ingredients": ["chicken", "yogurt", "tomatoes", "spices"]},
+                {"name": "Lentil Dal", "ingredients": ["lentils", "onions", "tomatoes", "spices"]},
+            ],
         }
-        return recipe
 
-    def display_recipe(self, recipe):
-        print("\n--- Your Generated Recipe ---")
-        for key, value in recipe.items():
-            print(f"{key}: {value}")
-        print("-----------------------------")
+    def generate_recipe_by_cuisine(self, cuisine):
+        cuisine = cuisine.lower()
+        if cuisine in self.recipes:
+            return random.choice(self.recipes[cuisine])
+        return None
 
-if __name__ == '__main__':
+    def generate_random_recipe(self):
+        cuisine = random.choice(list(self.recipes.keys()))
+        return self.generate_recipe_by_cuisine(cuisine)
+
+if __name__ == "__main__":
     generator = RecipeGenerator()
-    print("--- Interactive Recipe Generator ---")
-    
-    while True:
-        recipe = generator.generate_recipe()
-        generator.display_recipe(recipe)
-        
-        user_input = input("Generate another recipe? (y/n): ")
-        if user_input.lower() != 'y':
-            break
 
-    print("Exiting Recipe Generator.")
+    print("Random Recipe:")
+    recipe = generator.generate_random_recipe()
+    if recipe:
+        print(f"Name: {recipe['name']}")
+        print(f"Ingredients: {', '.join(recipe['ingredients'])}")
+    else:
+        print("Could not generate a recipe.")
+
+    print("\nItalian Recipe:")
+    italian_recipe = generator.generate_recipe_by_cuisine("italian")
+    if italian_recipe:
+        print(f"Name: {italian_recipe['name']}")
+        print(f"Ingredients: {', '.join(italian_recipe['ingredients'])}")
+    else:
+        print("Could not generate an Italian recipe.")

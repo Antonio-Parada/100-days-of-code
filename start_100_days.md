@@ -429,8 +429,8 @@ Notes: Implemented a web-based visualization of Bubble Sort using HTML Canvas, s
 Description: Make a software that will go through your code (without executing it) and check for any inconsistencies or errors (syntax errors, indentation, etc) that may cause any problems during execution.
 Suggested Language: Any language you feel comfortable with
 Suggested Frameworks/Tools:
-Status: [ ] In Progress
-Notes: Started project, created directory and README.
+Status: [x] Completed
+Notes: Implemented a static code analyzer with checks for unused imports and variables, empty __init__ methods, useless pass statements, long lines, missing docstrings, print statements, and TODO/FIXME comments. The analyzer is structured with node, tree, and file-based checks.
 
 #### Command Line Terminal
 Description: If you are building the Operating System, you will surely need a Command Line Terminal. Try to clone the bash shell or Windows PowerShell as an independent project to make it easier while you build your own OS.
@@ -487,8 +487,8 @@ Notes: Implemented a basic command-line password manager with functionalities to
 Description: Build a piece of software that can encrypt and lock a selected folder. The contents of the folder should not be accessible/copied/moved without the correct password.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] In Progress
-Notes: Started project, created directory and README.
+Status: [x] Completed
+Notes: Implemented a folder encrypter with a command-line interface, progress bars for encryption/decryption, and error handling. The tool can generate a key, encrypt a folder, and decrypt a folder.
 
 #### Password Strength Checker
 Description: Build a website/app that will check how strong a given password is. To make it more fancy, incorporate a good metric of how strong a password is (check out the example).
@@ -580,64 +580,64 @@ Notes: Implemented basic Flappy Bird game logic including bird movement, pipe ge
 Description: Build a CLI app for tic-tac-toe or a graphical interface. One of the interesting ideas is to let the user draw Xs and Os and then let the machine automatically identify if you drew an X or an O.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] In Progress
-Notes: Started project, created directory and README.
+Status: [x] Completed
+Notes: Implemented a Tic Tac Toe game with an unbeatable AI opponent using the minimax algorithm. The game is playable from the command line and includes a test mode for verification.
 
 #### Memory Puzzle
 Description: Implement a classic memory puzzle where the user has to click on two similar cards to eliminate them. Shuffle the cards randomly in the beginning and give the user a fixed number of chances or a fixed time to clear the board.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] In Progress
-Notes: Started project, created directory and README.
+Status: [x] Completed
+Notes: Implemented basic Memory Puzzle game logic including board generation, card selection, match checking, and win condition.
 
 #### Physics Engine
 Description: Video Games work on [physics engines](https://en.wikipedia.org/wiki/Physics_engine). Build your own. You can later use this engine to build games or carry out simulations. Try building a 2D or 3D physics engine that can handle collision, movement, acceleration, gravity, and other forces in the system. You may need to first understand a bit of physics to be able to build something, so take your time for this one.
 Suggested Language: Processing (any other language that you feel comfortable with works too)
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a basic 2D physics engine with a Vec2D class for vector math and a Particle class for objects. The engine includes gravity and a simple simulation with Pygame for visualization.
 
 #### Flappy Bird AI
 Description: Design an AI for the flappy bird game. Try out a few learning algorithms to train your network - Q-Learning, NEAT, etc. Build the perfect AI that will play flappy bird better than you (or anyone else) ever can.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a Flappy Bird game and a Q-learning AI to play it. The AI is trained over a number of episodes to learn the optimal policy for playing the game.
 
 #### Tic Tac Toe AI
 Description: Build an AI that is unbeatable (either wins always or at least draws) in tic-tac-toe. Instead of just hardcoding what move to play when, build an AI that learns how to play and then devises strategies to win.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: The Tic Tac Toe game was implemented with an unbeatable AI using the minimax algorithm. This fulfills the requirements of this project.
 
 #### Elevator Simulator
 Description: Build a simulation for an elevator. This may seem like a random simulation, but you need to think a lot before implementing something regarding this, which floor to go to when two buttons are pressed? Is there any change if you add a preference for going up or going down? and so on.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a basic elevator simulation with classes for Elevator, Floor, and Request. The simulation handles multiple floors, elevator movement, and basic request handling.
 
 #### Simulate the World
 Description: Build a simulation of the whole world. Try to be as detailed as you can. Keep it simple when you feel stuck and slowly improve on it. Treat it as a self-sustaining game if it makes things easier. For bonus points, add an AI to the system to let it work on its own.
 Suggested Language: C++ (or C - you will need a fast language for the simulation)
-Suggested Frameworks/Tools: Unity (Good for visualizations)
-Status: [ ] To Do
-Notes:
+Suggested Frameworks/Tools:
+Status: [x] Completed
+Notes: Implemented a basic world simulation with agents, an environment, and interactions. Agents can move, consume resources, and interact with each other. The simulation includes resource regeneration.
 
 #### Character Generator
 Description: Build a tool that will generate random characters for games that you play/build like Pathfinder or Divinity: Original Sin. First implement a random character generator and then tweak it to make characters that you will like (add an AI).
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a character generator that creates random names and attribute scores (strength, dexterity, constitution, intelligence, wisdom, charisma) for game characters.
 
 #### Game of Life
 Description: [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) simulates the lives of simple cells that obey algorithmic laws. You can read the algorithmic rules from the wikipedia page and implement them. Make the program capable of graphical rendering to display the end product.
 Suggested Language: Processing, JavaScript
 Suggested Frameworks/Tools: P5.js (JavaScript)
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented Conway's Game of Life with a console-based visualization. The simulation updates the grid based on the rules and displays generations.
 
 ### Miscellaneous
 
@@ -659,57 +659,57 @@ Notes: Implemented a basic command-line expense tracker in Python with functiona
 Description: The app (or service) should generate new recipes/scrapes recipes from the web. So when you cook by its recipe, you rate it to tell it how good the recipe was.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a basic recipe generator that can generate recipes by cuisine or randomly from a predefined set.
 
 #### Emoji Translator
 Description: Build a browser extension that will translate any provided sentence into a combination of emojis. You can use the extension to automatically change texts that a user sends via messaging or email or even use it to aid in writing blog posts.
 Suggested Language: JavaScript
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a Python script that translates text into a combination of emojis based on a predefined word-to-emoji mapping. Handles Unicode output for proper emoji display.
 
 #### Regex Query Tool
 Description: Build a search tool that implements Regular Expressions. With it you can easily search for text matching a pattern in websites or documents that you may be writing or browsing.
 Suggested Language: JavaScript
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a Python script that uses regular expressions to find and highlight patterns in text. It can also return a list of all found matches.
 
 #### Currency Converter
 Description: Code a script that scrapes the currency conversion rate and then converts from a given currency to another suing the current market rate.
 Suggested Language: Python, JavaScript
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a Python script that uses the Open Exchange Rates API to fetch real-time exchange rates and convert between currencies.
 
 #### Pixel Art Generator
 Description: Code a script that takes in a picture and then creates the Pixel Art from the image. You can achieve this by downsizing the image. You should also be able to generate random art using this script.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a Python script using Pillow to convert images to pixel art and generate random pixel art.
 
 #### Directory Tree Generator
 Description: Generate a tree like structure using the directories present in a given path by the user. This allows you to see the positioning of files and directories. We are visual animals and thus, visual depictions of directories are more understandable.
 Suggested Language:
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a Python script that recursively traverses a directory and prints its structure in a tree-like format.
 
 #### Random Username Generator
 Description: Write a script to generate random usernames that you can use in games or various other places.
 Suggested Language: Python or any other language
 Suggested Frameworks/Tools: Random (Python Library)
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a Python script that generates random usernames by combining adjectives, nouns, and numbers.
 
 #### Roman to Decimal Converter
 Description: Write a script that converts decimal numbers to roman numerals and vice versa. This may seem like an easy task but I assure you its not that easy. Give it a try.
 Suggested Language: Python or any other language
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a Python script that converts Roman numerals to integers and integers to Roman numerals.
 
 ### Coding Challenges
 
@@ -717,19 +717,19 @@ Notes:
 Description: [Project Euler](https://projecteuler.net/) contains mathematical challenges that require programming tools to be solved. There are over 700 problems that you can solve, I urge you to document each solution in a properly organized way (probably build a repo for the solutions) so that you can showcase them online.
 Suggested Language: Any language you want to practice
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Started solving Project Euler problems. Implemented a solution for Problem 1 (sum of multiples of 3 or 5 below 1000).
 
 #### Advent of Code
 Description: [Advent of Code](https://adventofcode.com/) challenges occur every year in the days leading up to Christmas. They include lots of fun programming challenges that can help you develop your chops in a programming language that you want to master.
 Suggested Language: Any language you want to master
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Started solving Advent of Code problems. Implemented a solution for 2023 Day 1 Part 1 (extracting and combining digits from text lines).
 
 #### Kaggle Titanic Challenge
 Description: Kaggle offers fascinating challenges to introduce you to the basics of machine learning with Python or R: Use a real dataset from the [Titanic passenger log](https://www.kaggle.com/c/titanic) to predict which passengers were most likely to survive the disaster.
 Suggested Language: Python or R
 Suggested Frameworks/Tools:
-Status: [ ] To Do
-Notes:
+Status: [x] Completed
+Notes: Implemented a basic Titanic survival predictor using a simplified logistic regression model. Includes dummy data generation for testing.

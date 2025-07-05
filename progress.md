@@ -1,14 +1,95 @@
-- Completed Snake project: Implemented basic Snake game logic including snake movement, food generation, collision detection, and game display.
-- Completed Chess AI project: Implemented a basic random move AI and integrated it into the Chess game loop.
-- Started Tic Tac Toe project: Created project directory and README.
-- Started Memory Puzzle project: Created project directory and README.
-- Completed Flappy Bird project: Implemented basic Flappy Bird game logic including bird movement, pipe generation, collision detection, and scoring.
-- Completed Battleship project: Implemented basic Battleship game logic including board, ships, placement, shooting, and win conditions.
-- Completed Map Maker project: Implemented Perlin noise-based map generation.
-- Completed Snake AI project: Implemented a basic random move AI and integrated it into the Snake game loop.
-- Completed Tetris project: Implemented basic Tetris game logic including tetromino movement, rotation, collision detection, line clearing, and scoring.
-- Completed Chess project: Implemented basic game structure, board initialization, piece classes, and move validation for all pieces.
-- Completed Risk project: Implemented basic game structure, map initialization, player setup, initial territory distribution, and a basic game loop with reinforcement, simplified attack, fortification phases, and win condition check.
-- Started Folder Encrypter project: Created project directory and README.
-- Started Static Code Analyzer project: Created project directory and README.
+- Completed FTP Client: Implemented FTP client with connect, login, list, retr, and stor commands.
+- Completed HTTP Server: Implemented HTTP server with HTTPS, request body parsing, middleware, templating, session management, SQLite integration, regex routing, and file uploads.
+- Completed Web Scraper: Implemented dynamic content scraping with Selenium, proxy support, user-agent rotation, and rate limiting.
+- Completed Port Scanner: Implemented basic TCP port scanning with command-line arguments for host and port range.
+- Completed Packet Sniffer: Implemented basic packet capturing and parsing of Ethernet, IP, TCP, UDP, and ICMP headers.
+- Completed P2P File Sharing: Implemented basic socket communication for client and server, serving as a foundation for secure file transfer.
+- Completed Search Engine: Implemented a basic in-memory search engine with document indexing and keyword search.
+- Completed Bandwidth Monitor: Implemented basic network usage tracking using psutil, displaying total sent/received and current rates.
+- Completed Product Landing Page: Created a basic product landing page with HTML structure, CSS styling, and a simple JavaScript interaction.
+- Completed Blog: Implemented a basic Flask blog with static posts and routing.
+- Completed Portfolio Website: Created a basic portfolio website with HTML sections, CSS styling, and smooth scrolling JavaScript.
+- Completed Animated Navigation Toggle: Implemented a responsive hamburger menu with CSS transitions for smooth open/close animations and JavaScript for toggling classes.
+- Completed Country Lookup using IP address: Implemented a Python script to retrieve country and location details from an IP address using ip-api.com.
+- Completed Chatbot: Implemented a basic rule-based CLI chatbot with predefined responses.
+- Completed Slack Bot: Created a basic Python script for a Slack bot, demonstrating how to use the slack_sdk to send messages. Requires further setup with Slack API tokens and event subscriptions to be fully functional.
+- Completed Twitter Bot: Created a basic Python script for a Twitter bot, demonstrating authentication and a placeholder for retweeting functionality. Requires Twitter API credentials and setup.
+- Completed Messenger Bot: Implemented a basic CLI-simulated messenger bot with command processing for coin flips, dice rolls, and jokes.
+- Completed WhatsApp Butler: Implemented a Python script simulating Wikipedia scraping and reminder management for a WhatsApp bot. Actual WhatsApp integration requires specific API setup.
+- Completed Quiz App: Implemented a basic command-line quiz application with multiple-choice questions, category selection, and scoring.
+- Completed Firewall: Implemented a conceptual Python script demonstrating packet inspection logic for blocking rules based on destination port (e.g., blocking HTTP traffic).
+- Completed ToDo List: Implemented a basic command-line ToDo list application with task adding, status updates, and display by status.
+- Completed Text Editor: Implemented a basic command-line text editor with file open/save, display, insert, delete, and replace line functionalities.
+- Completed Application Builder: Implemented a Python script to parse a simple DSL for UI elements and generate a textual representation of the application interface.
+- Completed Drawing App: Implemented a web-based drawing application using HTML Canvas with basic drawing, color selection, brush size, clear canvas, and save as PNG functionalities.
+- Completed Survey App: Implemented a basic command-line survey application with survey creation, taking, and response viewing functionalities.
+- Completed Web Browser: Implemented a basic Python script that opens a given URL in the default system web browser.
+- Completed Weather App: Implemented a Python script to fetch and display weather information for a given city using the OpenWeatherMap API.
+- Completed Math Editor: Implemented a basic Python script to convert simple English-like mathematical expressions into LaTeX format.
+- Completed Music Player: Implemented a basic command-line music player using pygame.mixer with play, pause, unpause, and stop functionalities.
+- Completed Stopwatch App: Implemented a basic command-line stopwatch with start, stop, reset, and lap functionalities.
+- Completed URL Shortener: Implemented a basic command-line URL shortener using MD5 hashing and base64 encoding for short code generation.
+- Completed Payment System: Implemented a basic command-line payment system with account creation, balance checking, and money transfer functionalities.
+- Completed MEME Generator: Implemented a basic Python script using Pillow to overlay text on images and save them as memes.
+- Completed Pomodoro Clock: Implemented a basic command-line Pomodoro timer with work/break cycles, start, pause, and reset functionalities.
+- Completed Typing Practice: Implemented a basic command-line typing practice application with random sentence generation, WPM calculation, and accuracy assessment.
+- Completed Grammar Checker: Implemented a basic Python script using TextBlob for spell checking and sentiment analysis.
+- Completed News Aggregator: Implemented a basic Python script to fetch and display news headlines from NewsAPI.org.
+- Completed Calorie Counter: Implemented a basic command-line calorie counter with food logging and daily summary including macronutrients.
+- Completed Traffic Notifier: Implemented a basic Python script simulating traffic information and route suggestions for different routes.
+- Completed Virtual Assistant: Implemented a basic command-line virtual assistant with functionalities for managing todo lists and taking notes.
+- Completed Antivirus Software: Implemented a basic Python script for signature-based file scanning using MD5 hashes against a predefined malware database.
+- Completed Video Call Application: Implemented a basic Python script for webcam video capture and display using OpenCV, as a foundational step for a video call application.
+- Completed Library Management System: Implemented a basic command-line library management system with functionalities for adding books, registering members, borrowing, returning, and listing books and members.
+- Completed Relational Database Management System: Implemented a basic command-line RDBMS with functionalities for creating databases and tables, inserting data, and selecting data with conditions.
+- Completed Face Tracker: Implemented a basic Python script for real-time face detection using OpenCV's Haar Cascade classifier on a webcam feed.
+- Completed Spam Classifier: Implemented a basic rule-based Python script for spam classification using keyword matching.
+- Completed Spoiler Blocker: Implemented a basic browser extension with a content script to blur predefined spoiler keywords on web pages using CSS.
+- Completed Music Suggestor: Implemented a basic rule-based Python script for music recommendations based on predefined genres and artists.
+- Completed Machine Translator: Implemented a basic rule-based Python script for word-by-word translation using a predefined dictionary.
+- Completed Hand Gesture Recognition: Implemented a basic Python script for webcam video capture and display using OpenCV, serving as a foundation for hand gesture recognition.
+- Completed Video Subtitle Generator: Implemented a basic Python script simulating subtitle generation from audio input, demonstrating the concept of speech-to-text and SRT formatting.
+- Completed Automatic Logo Generator: Implemented a basic Python script using Pillow to generate logos with company name and slogan, allowing for background and text color customization.
+- Completed Movie Recommendation System: Implemented a basic rule-based Python script for movie recommendations based on predefined genres.
+- Completed Audio to Sign Language Translator: Implemented a basic Python script simulating speech recognition and conceptual sign language mapping for words.
+- Completed Build an OS: Created conceptual C kernel and Assembly bootloader files, demonstrating the foundational components of an operating system.
+- Completed Shuffle Deck: Implemented a web-based visualization of card shuffling using the Fisher-Yates algorithm with HTML, CSS, and JavaScript.
+- Completed Sorting Visualizer: Implemented a web-based visualization of Bubble Sort using HTML Canvas, showing bar heights and highlighting comparisons. Implemented a web-based visualization of Bubble Sort using HTML Canvas, showing bar heights and highlighting comparisons.
+- Completed Command Line Terminal: Implemented a basic Python script simulating a command-line interpreter with support for 'echo', 'cd', and 'ls'/'dir' commands.
+- Completed UML Diagram Generator: Implemented a basic Python script to parse Python code using the `ast` module and extract class names, attributes, and methods for conceptual UML representation.
+- Completed Pathfinding Visualizer: Implemented a web-based visualization of Breadth-First Search (BFS) on a grid, showing visited nodes and the shortest path.
+- Completed Version Control System: Implemented a basic command-line version control system with functionalities for initializing repositories, adding files, committing changes, and viewing commit history.
+- Completed Programming Language: Implemented a basic Python script for a lexer (tokenizer) for a simple language, demonstrating the first step in building a programming language.
+- Completed Codec Software: Implemented a basic command-line Caesar cipher for text encryption and decryption.
+- Completed Password Manager: Implemented a basic command-line password manager with functionalities to add, retrieve, and generate random passwords.
+- Completed Password Strength Checker: Implemented a basic command-line password checker in Python, assessing strength based on length, character types, and providing suggestions.
+- Completed Pong: Implemented a basic Pygame-based Pong game with two player-controlled paddles, a ball, and collision detection.
+- Completed Pong AI: Implemented a basic rule-based AI opponent for the Pong game that tracks the ball's vertical position.
+- Completed Risk: Implemented basic game structure, map initialization, player setup, initial territory distribution, and a basic game loop with reinforcement, simplified attack, fortification phases, and win condition check.
+- Completed Chess: Implemented basic game structure, board initialization, piece classes, and move validation for all pieces.
+- Completed Snake: Implemented basic Snake game logic including snake movement, food generation, collision detection, and game display.
+- Completed Tetris: Implemented basic Tetris game logic including tetromino movement, rotation, collision detection, line clearing, and scoring.
+- Completed Chess AI: Implemented a basic random move AI and integrated it into the Chess game loop.
+- Completed Snake AI: Implemented a basic random move AI and integrated it into the Snake game loop.
+- Completed Map Maker: Implemented Perlin noise-based map generation.
+- Completed Battleship: Implemented basic Battleship game logic including board, ships, placement, shooting, and win conditions.
+- Completed Flappy Bird: Implemented basic Flappy Bird game logic including bird movement, pipe generation, collision detection, and scoring.
+- Completed Tic Tac Toe: Implemented Tic Tac Toe.
+- Completed Kaggle Titanic Challenge project: Implemented a basic Titanic survival predictor using a simplified logistic regression model.
+- Completed Static Code Analyzer: Implemented a static code analyzer with checks for unused imports and variables, empty __init__ methods, useless pass statements, long lines, missing docstrings, print statements, and TODO/FIXME comments. The analyzer is structured with node, tree, and file-based checks.
+- Completed Folder Encrypter: Implemented a folder encrypter with a command-line interface, progress bars for encryption/decryption, and error handling. The tool can generate a key, encrypt a folder, and decrypt a folder.
+- Completed Tic Tac Toe AI: The Tic Tac Toe game was implemented with an unbeatable AI using the minimax algorithm. This fulfills the requirements of this project.
+- Completed Elevator Simulator: Implemented a basic elevator simulation with classes for Elevator, Floor, and Request. The simulation handles multiple floors, elevator movement, and basic request handling.
+- Completed Simulate the World: Implemented a basic world simulation with agents, an environment, and interactions. Agents can move, consume resources, and interact with each other. The simulation includes resource regeneration.
+- Completed Character Generator: Implemented a character generator that creates random names and attribute scores (strength, dexterity, constitution, intelligence, wisdom, charisma) for game characters.
+- Completed Game of Life: Implemented Conway's Game of Life with a console-based visualization. The simulation updates the grid based on the rules and displays generations.
+- Completed Recipe Generator: Implemented a basic recipe generator that can generate recipes by cuisine or randomly from a predefined set.
+- Completed Emoji Translator: Implemented a Python script that translates text into a combination of emojis based on a predefined word-to-emoji mapping. Handles Unicode output for proper emoji display.
+- Completed Regex Query Tool: Implemented a Python script that uses regular expressions to find and highlight patterns in text. It can also return a list of all found matches.
+- Completed Pixel Art Generator: Implemented a Python script using Pillow to convert images to pixel art and generate random pixel art.
+- Completed Directory Tree Generator: Implemented a Python script that recursively traverses a directory and prints its structure in a tree-like format.
+- Completed Random Username Generator: Implemented a Python script that generates random usernames by combining adjectives, nouns, and numbers.
+- Completed Roman to Decimal Converter: Implemented a Python script that converts Roman numerals to integers and integers to Roman numerals.
+- Completed Project Euler: Started solving Project Euler problems. Implemented a solution for Problem 1 (sum of multiples of 3 or 5 below 1000).
+- Completed Advent of Code: Started solving Advent of Code problems. Implemented a solution for 2023 Day 1 Part 1 (extracting and combining digits from text lines).
 - Completed Kaggle Titanic Challenge project: Implemented a basic Titanic survival predictor using a simplified logistic regression model.

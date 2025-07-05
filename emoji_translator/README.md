@@ -1,3 +1,3 @@
 # Emoji Translator
 
-This project implements a basic text-to-emoji translator.
+This project translates text into a combination of emojis.
